@@ -4,8 +4,44 @@
 #include <fstream>
 
 
+//column number of entries from the syncromatics stop time export (starting with 0)
+#define VEHICLE_NAME 1
+#define PATTERN_NAME 8
+#define STOP_NAME 10
+#define STOP_NUMBER 11
+#define TRIP_NAME 14
+#define ARRIVE 18
+#define DEPART 21
+
+
 //read from the stop time export CSV and return an unordered map of bus history classes
 //std::unordered_map<std::string, BusHistory*> getAVL(std::string filePath);
+
+class StopTime {
+public:
+	//constructor
+	StopTime(std::string lineFromStopTimeExport);
+
+	int getArrivalTimeInt();
+	int getDepartureimeInt();
+private:
+	//values
+	std::string arrivalTime;
+	std::string departureTime;
+	int arrivalTimeInt;
+	int departureTimeInt;
+	std::string stopID;
+	std::string stopName;
+	std::string routePatternName;
+	std::string tripID;
+
+	//functions
+	//remove syncromatics garbage from time
+	std::string removeSyncromaticsGarbageFromTime(std::string fixme);
+	//convert time string to int
+	int convertTimeStringToInt(std::string convertMe);
+
+};
 
 class BusHistory {
 public:
@@ -20,26 +56,3 @@ private:
 	std::vector<StopTime*> stopTimesVector;
 };
 
-class StopTime() {
-public:
-	//constructor
-	StopTime(std::string arrivalTime, std::string departureTime, std::string departureTime, std::string stopID, std::string routePatternName);
-
-	std::string getArrivalTimeInt();
-	std::string getDepartureimeInt();
-private:
-	//values
-	std::string arrivalTime;
-	std::string departureTime;
-	int arrivalTimeInt;
-	int departureTimeInt;
-	std::string stopID;
-	std::string routePatternName;
-
-	//functions
-	//remove syncromatics garbage from time
-	std::string removeSyncromaticsGarbageFromTime(std::string fixme);
-	//convert time string to int
-	int convertTimeStringToInt(std::string convertMe);
-
-};
