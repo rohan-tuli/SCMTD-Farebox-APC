@@ -2,7 +2,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-
+#include <unordered_map>
 
 //column number of entries from the syncromatics stop time export (starting with 0)
 #define VEHICLE_NAME 1
@@ -14,9 +14,6 @@
 #define DEPART 21
 
 
-//read from the stop time export CSV and return an unordered map of bus history classes
-//std::unordered_map<std::string, BusHistory*> getAVL(std::string filePath);
-
 class StopTime {
 public:
 	//constructor
@@ -24,6 +21,7 @@ public:
 
 	int getArrivalTimeInt();
 	int getDepartureimeInt();
+	std::string getFleetID();
 private:
 	//values
 	std::string arrivalTime;
@@ -34,6 +32,7 @@ private:
 	std::string stopName;
 	std::string routePatternName;
 	std::string tripID;
+	std::string fleetID;
 
 	//functions
 	//remove syncromatics garbage from time
@@ -42,6 +41,8 @@ private:
 	int convertTimeStringToInt(std::string convertMe);
 
 };
+
+
 
 class BusHistory {
 public:
@@ -56,3 +57,8 @@ private:
 	std::vector<StopTime*> stopTimesVector;
 };
 
+
+//read from the stop time export CSV and return a map of bus history classes (one entry for each bus)
+//key: fleet id
+//value: history for the fleet id
+std::unordered_map<std::string, BusHistory*> getAVL(std::string filePath);

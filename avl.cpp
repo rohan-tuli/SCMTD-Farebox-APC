@@ -1,5 +1,41 @@
 #include "avl.h"
 
+
+//read from the stop time export CSV and return a vector of bus history classes (one entry for each bus)
+std::unordered_map<std::string, BusHistory*> getAVL(std::string filePath) {
+	//create an unordered map
+	std::unordered_map<std::string, BusHistory*> myMap;
+
+	//go through the file and input all the lines
+	std::ifstream avlFile;
+	std::string lineFromFile;
+	avlFile.open(filePath);
+	if (avlFile.is_open()) {
+		//throw away the first line
+		getline(avlFile, lineFromFile);
+		//go throught the rest of the lines
+		while(getline(avlFile, lineFromFile)) {
+			//create new stop time node
+			StopTime* myStopTime = new StopTime(lineFromFile);
+			//check if there isn't already an entry in the map for this fleet id
+			if (myMap.count(myStopTime->getFleetID()) == 0) {
+				//create a new one and put it in the map
+				BusHistory* myNewBusHistory = new BusHistory(myStopTime->getFleetID());
+				myMap.insert(std::pair<std::string, BusHistory*>(myStopTime->getFleetID(), myNewBusHistory));
+			} else {
+				//add the stop time node to an existing one
+				std::unordered_map<std::string, BusHistory*>::iterator myIterator;
+				myIterator = myMap.find(myStopTime->getFleetID());
+				myIterator->second->insertStopTime(myStopTime);
+			}
+
+		}
+	}
+
+	return myMap;
+}
+
+
 //bus history class ///////////
 //constructor
 BusHistory::BusHistory(std::string fleetID) {
@@ -22,7 +58,7 @@ StopTime::StopTime(std::string lineFromStopTimeExport) {
 	int commaCount = 0;
 	for (int i = 0; commaCount <= DEPART + 1; i++) {
 		currentReadChar = lineFromStopTimeExport.at(i);
-		if (currentReadChar == ',') {
+		if (currentReadChar == ',' && lineFromStopTimeExport.at(i + 1) != ' ') {
 			commaCount++;
 		} else {
 			if (commaCount == PATTERN_NAME) {
@@ -37,6 +73,8 @@ StopTime::StopTime(std::string lineFromStopTimeExport) {
 				rawArrivalTime.push_back(currentReadChar);
 			} else if (commaCount == DEPART) {
 				rawDepartureTime.push_back(currentReadChar);
+			} else if (commaCount == VEHICLE_NAME) {
+				this->fleetID.push_back(currentReadChar);
 			}
 		}
 	}
@@ -45,8 +83,19 @@ StopTime::StopTime(std::string lineFromStopTimeExport) {
 	this->departureTime = removeSyncromaticsGarbageFromTime(rawDepartureTime);
 	this->arrivalTimeInt = convertTimeStringToInt(this->arrivalTime);
 	this->departureTimeInt = convertTimeStringToInt(this->departureTime);
+
+		std::cout << fleetID << std::endl;
+		std::cout << routePatternName << std::endl;
+		std::cout << stopName << std::endl;
+		std::cout << stopID << std::endl;
+		std::cout << arrivalTime << std::endl;
+		std::cout << departureTime << std::endl << std::endl;
+
 }
 
+std::string StopTime::getFleetID() {
+	return this->fleetID;
+}
 
 int StopTime::getArrivalTimeInt() {
 	return this->arrivalTimeInt;
@@ -58,9 +107,14 @@ int StopTime::getDepartureimeInt() {
 //remove syncromatics garbage from time
 std::string StopTime::removeSyncromaticsGarbageFromTime(std::string fixme) {
 	std::string output;
-	for (int i = 11; i < 18; i++) {
-		output.push_back(fixme.at(i));
+	if (fixme.size() >= 18) {
+		for (int i = 11; i <= 18; i++) {
+			output.push_back(fixme.at(i));
+		}
+	} else {
+		output = "00:00:00";
 	}
+
 	return output;
 }
 
