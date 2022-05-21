@@ -56,6 +56,48 @@ void BusHistory::insertStopTime(StopTime* insertMe) {
 
 }
 
+StopTime* BusHistory::findStopTimeObj(int eventTime) {
+	std::cout << "looking for stop time " << eventTime << std::endl;
+
+	//first pass - iterate through the vector, and if the time int is between the arrival and departure times of a stop, return the obj for that stop time
+	for (int i = 0; i < this->stopTimesVector.size(); i++) {
+		if (this->stopTimesVector.at(i)->getArrivalTimeInt() <= eventTime && this->stopTimesVector.at(i)->getDepartureimeInt() >= eventTime) {
+			std::cout << "Found first pass match\n";
+			return this->stopTimesVector.at(i);
+
+		}
+	}
+
+	//if nothing has been found yet (the function hasn't returned), do a second pass (looking between nodes this time)
+	for (int i = 0; i < this->stopTimesVector.size() - 1; i++) {
+		//if it's between the current and next nodes
+		if (eventTime > this->stopTimesVector.at(i)->getDepartureimeInt() && eventTime < this->stopTimesVector.at(i + 1)->getArrivalTimeInt()) {
+			//find which node it's closer to
+			int distanceToPrevious = eventTime - this->stopTimesVector.at(i)->getDepartureimeInt();
+			int distanceToNext = this->stopTimesVector.at(i + 1)->getArrivalTimeInt() - eventTime;
+			//if it's closer to the previous node (inclusive), return that one
+			if (distanceToPrevious <= distanceToNext) {
+				std::cout << "Found second pass match (previous)\n";
+				return this->stopTimesVector.at(i);
+			} else { //if it's close to the next node, return that one
+				std::cout << "Found second pass match (next)\n";
+				return this->stopTimesVector.at(i + 1);
+			}
+		}
+	}
+
+	//if still nothing has been found (the function still hasn't returned), create a dummy StopTime obj and return that
+	//TODO
+	std::cout << "Creating empty...\n";
+	StopTime* empty = new StopTime("0,0,0,Operator,0,0,0,0,0,0,0,0,0,0,0,0,0000,0,00/00/0000 00:00:00 -00:00,0,00/00/0000 00:00:00 -00:00,00/00/0000 00:00:00 -00:00,0,00/00/0000 00:00:00 -00:00,0,0,0,0,0");
+	std::cout << "Returnign empty node\n";
+	return empty;
+}
+
+void BusHistory::printFleetID() {
+	std::cout << this->fleetID << std::endl;
+}
+
 //stop time class /////////////////////////
 //constructor
 StopTime::StopTime(std::string lineFromStopTimeExport) {
@@ -112,6 +154,13 @@ int StopTime::getDepartureimeInt() {
 	return this->departureTimeInt;
 }
 
+std::string StopTime::getDepartureTime() {
+	return this->departureTime;
+}
+
+std::string StopTime::getStopID() {
+	return this->stopID;
+}
 //remove syncromatics garbage from time
 std::string StopTime::removeSyncromaticsGarbageFromTime(std::string fixme) {
 	std::string output;
@@ -236,9 +285,11 @@ void EventHistory::readFromGFI(std::string FBfilePath, std::unordered_map<std::s
 		getline(fareboxFile, lineFromFile);
 		getline(fareboxFile, lineFromFile);
 		getline(fareboxFile, lineFromFile);
-
+		int counter = 0;
 		//go throught the rest of the lines
 		while(getline(fareboxFile, lineFromFile)) {
+			counter++;
+			std::cout << "Line item: " << counter << std::endl;
 			char currentReadChar;
 			int commaCount = 0;
 
@@ -259,11 +310,42 @@ void EventHistory::readFromGFI(std::string FBfilePath, std::unordered_map<std::s
 				}
 			}
 
+			//if the fleet sid is only 3 chars long, prepend a 0 to it
+			if (fleetID.size() == 3) {
+				fleetID.insert(0, "0");
+			}
+
 			//convert the raw time to actual time the actual time to a time int
 			std::string actualTime = removeGFIgarbageFromTime(rawTime);
 			int timeInt = convertTimeStringToInt(actualTime);
 
-			std::cout << actualTime << std::endl;
+			std::cout << actualTime << ", " << fleetID << std::endl;
+			std::cout << timeInt << std::endl;
+
+			//look up the fleet ID in the bus history map, and then use the timeInt to find the closest StopTime obj
+			std::unordered_map<std::string, BusHistory*>::iterator myIterator;
+			std::cout << "map\n";
+			myIterator = busHistoryMap.find(fleetID);
+			
+			std::cout << "fleet: " << std::endl;
+			//count the fleet id
+			std::cout << busHistoryMap.count(fleetID) << std::endl;
+
+			myIterator->second->printFleetID();
+			StopTime* foundStopTime = myIterator->second->findStopTimeObj(timeInt);
+			std::cout << "stopTime\n";
+
+			//get the stop ID for the found stop node
+			std::string stopID = foundStopTime->getStopID();
+			/*
+			//go through the vector of stops and add this to the correct stopLog based on the stopID
+			for (int i = 0; i < this->stops.size(); i++) {
+				if (stopID.compare(this->stops.at(i)->getStopID()) == 0) {
+					this->stops.at(i)->addStopEvent(foundStopTime);
+				}
+			} */
+
+			std::cout << std::endl;
 
 		}
 	}

@@ -35,6 +35,9 @@ public:
 	int getArrivalTimeInt();
 	int getDepartureimeInt();
 	std::string getFleetID();
+
+	std::string getDepartureTime();
+	std::string getStopID();
 private:
 	//values
 	std::string arrivalTime;
@@ -61,6 +64,10 @@ public:
 	BusHistory(std::string fleetID);
 	//add a stop time to the vector (in order)
 	void insertStopTime(StopTime* insertMe);
+	//return closest stop time obj, given a time int
+	StopTime* findStopTimeObj(int eventTime);
+	//print fleet id
+	void printFleetID();
 private:
 	//fleet ID
 	std::string fleetID;
