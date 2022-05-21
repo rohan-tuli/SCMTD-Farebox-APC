@@ -331,19 +331,25 @@ void EventHistory::readFromGFI(std::string FBfilePath, std::unordered_map<std::s
 			//count the fleet id
 			std::cout << busHistoryMap.count(fleetID) << std::endl;
 
-			myIterator->second->printFleetID();
-			StopTime* foundStopTime = myIterator->second->findStopTimeObj(timeInt);
-			std::cout << "stopTime\n";
+			//if the fleet id actually exists
+			if (busHistoryMap.count(fleetID) > 0) {
+				StopTime* foundStopTime = myIterator->second->findStopTimeObj(timeInt);
+				std::cout << "stopTime\n";
 
-			//get the stop ID for the found stop node
-			std::string stopID = foundStopTime->getStopID();
-			/*
-			//go through the vector of stops and add this to the correct stopLog based on the stopID
-			for (int i = 0; i < this->stops.size(); i++) {
-				if (stopID.compare(this->stops.at(i)->getStopID()) == 0) {
-					this->stops.at(i)->addStopEvent(foundStopTime);
-				}
-			} */
+				//get the stop ID for the found stop node
+				std::string stopID = foundStopTime->getStopID();
+				/*
+				//go through the vector of stops and add this to the correct stopLog based on the stopID
+				for (int i = 0; i < this->stops.size(); i++) {
+					if (stopID.compare(this->stops.at(i)->getStopID()) == 0) {
+						this->stops.at(i)->addStopEvent(foundStopTime);
+					}
+				} */
+			} else { //print an error
+				std::cout << "Error: Fleet ID " << fleetID << " exists in GFI but not in Syncromatics\n";
+
+			}
+			
 
 			std::cout << std::endl;
 
