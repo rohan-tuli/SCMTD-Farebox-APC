@@ -4,6 +4,9 @@
 #include <fstream>
 #include <unordered_map>
 
+//time period to export stop distribution in (minutes);
+#define STOP_DISTRIBUTION_TIME_PERIOD 15
+
 //column number of entries from the syncromatics stop time export (starting with 0)
 #define VEHICLE_NAME 1
 #define PATTERN_NAME 8
@@ -92,6 +95,9 @@ public:
 	std::string getLat();
 	std::string getLon();
 	std::string getName();
+	int getSize();
+
+	std::vector<StopTime*> getStopEvents();
 
 	void addStopEvent(StopTime* addMe);
 private:
@@ -113,6 +119,12 @@ public:
 
 	//print stops
 	void printStops();
+
+	//output total usage per stop CSV
+	void generateBoardingsPerStopCSV();
+
+	//output distribution of events for a specific stop
+	void generateEventDistribution(std::string stopID);
 private:
 	std::string removeGFIgarbageFromTime(std::string fixMe);
 	std::vector<StopLog*> stops;

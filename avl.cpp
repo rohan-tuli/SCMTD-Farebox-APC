@@ -57,12 +57,12 @@ void BusHistory::insertStopTime(StopTime* insertMe) {
 }
 
 StopTime* BusHistory::findStopTimeObj(int eventTime) {
-	std::cout << "looking for stop time " << eventTime << std::endl;
+	//std::cout << "looking for stop time " << eventTime << std::endl;
 
 	//first pass - iterate through the vector, and if the time int is between the arrival and departure times of a stop, return the obj for that stop time
 	for (int i = 0; i < this->stopTimesVector.size(); i++) {
 		if (this->stopTimesVector.at(i)->getArrivalTimeInt() <= eventTime && this->stopTimesVector.at(i)->getDepartureimeInt() >= eventTime) {
-			std::cout << "Found first pass match\n";
+			//std::cout << "Found first pass match\n";
 			return this->stopTimesVector.at(i);
 
 		}
@@ -77,10 +77,10 @@ StopTime* BusHistory::findStopTimeObj(int eventTime) {
 			int distanceToNext = this->stopTimesVector.at(i + 1)->getArrivalTimeInt() - eventTime;
 			//if it's closer to the previous node (inclusive), return that one
 			if (distanceToPrevious <= distanceToNext) {
-				std::cout << "Found second pass match (previous)\n";
+				//std::cout << "Found second pass match (previous)\n";
 				return this->stopTimesVector.at(i);
 			} else { //if it's close to the next node, return that one
-				std::cout << "Found second pass match (next)\n";
+				//std::cout << "Found second pass match (next)\n";
 				return this->stopTimesVector.at(i + 1);
 			}
 		}
@@ -88,9 +88,9 @@ StopTime* BusHistory::findStopTimeObj(int eventTime) {
 
 	//if still nothing has been found (the function still hasn't returned), create a dummy StopTime obj and return that
 	//TODO
-	std::cout << "Creating empty...\n";
+	//std::cout << "Creating empty...\n";
 	StopTime* empty = new StopTime("0,0,0,Operator,0,0,0,0,0,0,0,0,0,0,0,0,0000,0,00/00/0000 00:00:00 -00:00,0,00/00/0000 00:00:00 -00:00,00/00/0000 00:00:00 -00:00,0,00/00/0000 00:00:00 -00:00,0,0,0,0,0");
-	std::cout << "Returnign empty node\n";
+	//std::cout << "Returnign empty node\n";
 	return empty;
 }
 
@@ -203,6 +203,14 @@ std::string StopLog::getName() {
 	return this->name;
 }
 
+int StopLog::getSize() {
+	return this->stopEvents.size();
+}
+
+std::vector<StopTime*> StopLog::getStopEvents() {
+	return this->stopEvents;
+}
+
 // event history class /////////////////////////////
 //constructor (create a stop log obj for every stop (read from GTFS), add to vector)
 EventHistory::EventHistory(std::string GTFSfilePath) {
@@ -285,11 +293,10 @@ void EventHistory::readFromGFI(std::string FBfilePath, std::unordered_map<std::s
 		getline(fareboxFile, lineFromFile);
 		getline(fareboxFile, lineFromFile);
 		getline(fareboxFile, lineFromFile);
-		int counter = 0;
+
 		//go throught the rest of the lines
 		while(getline(fareboxFile, lineFromFile)) {
-			counter++;
-			std::cout << "Line item: " << counter << std::endl;
+
 			char currentReadChar;
 			int commaCount = 0;
 
@@ -319,40 +326,32 @@ void EventHistory::readFromGFI(std::string FBfilePath, std::unordered_map<std::s
 			std::string actualTime = removeGFIgarbageFromTime(rawTime);
 			int timeInt = convertTimeStringToInt(actualTime);
 
-			std::cout << actualTime << ", " << fleetID << std::endl;
-			std::cout << timeInt << std::endl;
-
-			//look up the fleet ID in the bus history map, and then use the timeInt to find the closest StopTime obj
-			std::unordered_map<std::string, BusHistory*>::iterator myIterator;
-			std::cout << "map\n";
-			myIterator = busHistoryMap.find(fleetID);
-			
-			std::cout << "fleet: " << std::endl;
-			//count the fleet id
-			std::cout << busHistoryMap.count(fleetID) << std::endl;
+			//std::cout << actualTime << ", " << fleetID << std::endl;
+			//std::cout << timeInt << std::endl;
 
 			//if the fleet id actually exists
 			if (busHistoryMap.count(fleetID) > 0) {
+				//look up the fleet ID in the bus history map, and then use the timeInt to find the closest StopTime obj
+				std::unordered_map<std::string, BusHistory*>::iterator myIterator;
+
+				myIterator = busHistoryMap.find(fleetID);
+
 				StopTime* foundStopTime = myIterator->second->findStopTimeObj(timeInt);
-				std::cout << "stopTime\n";
 
 				//get the stop ID for the found stop node
 				std::string stopID = foundStopTime->getStopID();
-				/*
+				
 				//go through the vector of stops and add this to the correct stopLog based on the stopID
 				for (int i = 0; i < this->stops.size(); i++) {
 					if (stopID.compare(this->stops.at(i)->getStopID()) == 0) {
 						this->stops.at(i)->addStopEvent(foundStopTime);
 					}
-				} */
+				}
 			} else { //print an error
 				std::cout << "Error: Fleet ID " << fleetID << " exists in GFI but not in Syncromatics\n";
 
 			}
 			
-
-			std::cout << std::endl;
-
 		}
 	}
 
@@ -362,4 +361,54 @@ void EventHistory::printStops() {
 	for (int i = 0; i < this->stops.size(); i++) {
 		std::cout << stops.at(i)->getStopID() << ", " << stops.at(i)->getName() << std::endl;
 	}
+}
+
+void EventHistory::generateBoardingsPerStopCSV() {
+	std::ofstream outputFile;
+	outputFile.open("boardings_per_stop.csv");
+	//output column headers to file
+	outputFile << "lat, lon, stop_id, stop_name, usage\n";
+	for (int i = 0; i < this->stops.size(); i++) {
+		outputFile << this->stops.at(i)->getLat() << "," << 
+					  this->stops.at(i)->getLon() << "," <<
+					  this->stops.at(i)->getStopID() << "," <<
+					  this->stops.at(i)->getName() << "," <<
+					  this->stops.at(i)->getSize() << std::endl;
+	}
+	outputFile.close();
+
+}
+
+//output distribution of events for a specific stop
+void EventHistory::generateEventDistribution(std::string stopID) {
+	std::ofstream outputFile;
+	std::string fileName = stopID;
+	fileName.append("_distribution.txt");
+
+	outputFile.open(fileName);
+	//this is all very fancy, but just dump all the times into a file to see what it looks like in excel
+	//lookup the correct StopLog
+	for (int i = 0; i < this->stops.size(); i++) {
+		if (stopID.compare(this->stops.at(i)->getStopID()) == 0) { //if it's the correct stop ID
+			//get the correct vector
+			std::vector<StopTime*> stopEventVector = this->stops.at(i)->getStopEvents();
+			//go through each stop event and write the departure time to the file
+			for (int j = 0; j < this->stops.at(i)->getSize(); j++) {
+				outputFile << stopEventVector.at(j)->getDepartureTime() << std::endl;
+			}
+
+		}
+	}
+
+	outputFile.close();
+
+	//output column headers to file
+	//outputFile << "time period, count\n";
+	//time period X minutes long - increses by X minuteseach iteration
+	//this x * 60 seconds to iterate every time
+
+	//get the lower bound from the  time of the first event
+
+	//get the upper bound form the time of the last event 
+
 }
