@@ -41,6 +41,7 @@ public:
 
 	std::string getDepartureTime();
 	std::string getStopID();
+	std::string getRoutePatternName();
 private:
 	//values
 	std::string arrivalTime;

@@ -161,6 +161,11 @@ std::string StopTime::getDepartureTime() {
 std::string StopTime::getStopID() {
 	return this->stopID;
 }
+
+std::string StopTime::getRoutePatternName() {
+	return this->routePatternName;
+}
+
 //remove syncromatics garbage from time
 std::string StopTime::removeSyncromaticsGarbageFromTime(std::string fixme) {
 	std::string output;
@@ -383,17 +388,19 @@ void EventHistory::generateBoardingsPerStopCSV() {
 void EventHistory::generateEventDistribution(std::string stopID) {
 	std::ofstream outputFile;
 	std::string fileName = stopID;
-	fileName.append("_distribution.txt");
+	fileName.append("_distribution.csv");
+
+	//look up the stop time in GTFS and choose the closest one
 
 	outputFile.open(fileName);
-	//this is all very fancy, but just dump all the times into a file to see what it looks like in excel
 	//lookup the correct StopLog
 	for (int i = 0; i < this->stops.size(); i++) {
 		if (stopID.compare(this->stops.at(i)->getStopID()) == 0) { //if it's the correct stop ID
 			//get the correct vector
 			std::vector<StopTime*> stopEventVector = this->stops.at(i)->getStopEvents();
-			//go through each stop event and write the departure time to the file
+			//go through each stop event and write the departure time (and route) to the file
 			for (int j = 0; j < this->stops.at(i)->getSize(); j++) {
+				outputFile << stopEventVector.at(j)->getRoutePatternName() << ",";
 				outputFile << stopEventVector.at(j)->getDepartureTime() << std::endl;
 			}
 
