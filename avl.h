@@ -13,6 +13,19 @@
 #define ARRIVE 18
 #define DEPART 21
 
+//column number of entries from GTFS feed
+#define GTFS_STOP_CODE 1
+#define GTFS_STOP_NAME 2
+#define GTFS_STOP_LAT 4
+#define GTFS_STOP_LON 5
+
+//column number of entires from GFI farebox export
+#define GFI_DATE_TIME 3
+#define GFI_FLEET_ID 4
+
+
+//convert time string to int
+int convertTimeStringToInt(std::string convertMe);
 
 class StopTime {
 public:
@@ -37,8 +50,6 @@ private:
 	//functions
 	//remove syncromatics garbage from time
 	std::string removeSyncromaticsGarbageFromTime(std::string fixme);
-	//convert time string to int
-	int convertTimeStringToInt(std::string convertMe);
 
 };
 
@@ -62,3 +73,41 @@ private:
 //key: fleet id
 //value: history for the fleet id
 std::unordered_map<std::string, BusHistory*> getAVL(std::string filePath);
+
+
+//stop obj where data is stored
+class StopLog {
+public:
+	//constructor
+	StopLog(std::string stopID, std::string name, std::string lat, std::string lon);
+
+	std::string getStopID();
+	std::string getLat();
+	std::string getLon();
+	std::string getName();
+
+	void addStopEvent(StopTime* addMe);
+private:
+	std::string stopID;
+	std::string lat;
+	std::string lon;
+	std::string name;
+	std::vector<StopTime*> stopEvents;
+};
+
+class EventHistory {
+public:
+	//constructor (create a stop log obj for every stop (read from GTFS), add to vector)
+	EventHistory(std::string GTFSfilePath);
+	/* given the unordred map of AVL history and the unordered map of bus stop logs, go through the GFI export
+	and find the closest BusHistory.StopTime for that line item, then put it in the correct stop log
+	*/
+	void readFromGFI(std::string FBfilePath, std::unordered_map<std::string, BusHistory*> busHistoryMap);
+
+	//print stops
+	void printStops();
+private:
+	std::string removeGFIgarbageFromTime(std::string fixMe);
+	std::vector<StopLog*> stops;
+};
+

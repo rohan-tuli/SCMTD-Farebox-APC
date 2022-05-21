@@ -1,6 +1,8 @@
 #include "avl.h"
 
 
+
+
 //read from the stop time export CSV and return a vector of bus history classes (one entry for each bus)
 std::unordered_map<std::string, BusHistory*> getAVL(std::string filePath) {
 	//create an unordered map
@@ -33,6 +35,12 @@ std::unordered_map<std::string, BusHistory*> getAVL(std::string filePath) {
 	}
 
 	return myMap;
+}
+
+int convertTimeStringToInt(std::string convertMe) {
+	int output = 0;
+	output = (convertMe[7]-48) + (convertMe[6]-48)*10 + (convertMe[4]-48)*60 + (convertMe[3]-48)*600 + (convertMe[1]-48)*3600 + (convertMe[0]-48)*36000;
+	return output;
 }
 
 
@@ -118,8 +126,152 @@ std::string StopTime::removeSyncromaticsGarbageFromTime(std::string fixme) {
 	return output;
 }
 
-int StopTime::convertTimeStringToInt(std::string convertMe) {
-	int output = 0;
-	output = (convertMe[7]-48) + (convertMe[6]-48)*10 + (convertMe[4]-48)*60 + (convertMe[3]-48)*600 + (convertMe[1]-48)*3600 + (convertMe[0]-48)*36000;
+
+// stop log class /////////////////////////////
+StopLog::StopLog(std::string stopID, std::string name, std::string lat, std::string lon) {
+	this->stopID = stopID;
+	this->name = name;
+	this->lat = lat;
+	this->lon = lon;
+}
+
+void StopLog::addStopEvent(StopTime* addMe) {
+	stopEvents.push_back(addMe);
+}
+
+
+std::string StopLog::getStopID() {
+	return this->stopID;
+}
+std::string StopLog::getLat() {
+	return this->lat;
+}
+std::string StopLog::getLon() {
+	return this->lon;
+}
+
+std::string StopLog::getName() {
+	return this->name;
+}
+
+// event history class /////////////////////////////
+//constructor (create a stop log obj for every stop (read from GTFS), add to vector)
+EventHistory::EventHistory(std::string GTFSfilePath) {
+	
+	//go through the file and input all the lines
+	std::ifstream gtfsFile;
+	std::string lineFromFile;
+	gtfsFile.open(GTFSfilePath);
+	if (gtfsFile.is_open()) {
+		//throw away the first line
+		getline(gtfsFile, lineFromFile);
+		//go throught the rest of the lines
+		while(getline(gtfsFile, lineFromFile)) {
+			char currentReadChar;
+			int commaCount = 0;
+
+			//placeholder strings to put the extracted data
+			std::string stopID;
+			std::string lat;
+			std::string lon;
+			std::string name;
+
+			for (int i = 0; commaCount <= GTFS_STOP_LON + 1; i++) {
+				currentReadChar = lineFromFile.at(i);
+				if (currentReadChar == ',' && lineFromFile.at(i + 1) != ' ') {
+					commaCount++;
+				} else {
+					if (commaCount == GTFS_STOP_CODE) {
+						stopID.push_back(currentReadChar);
+					} else if (commaCount == GTFS_STOP_LAT) {
+						lat.push_back(currentReadChar);
+					} else if (commaCount == GTFS_STOP_LON) {
+						lon.push_back(currentReadChar);
+					} else if (commaCount == GTFS_STOP_NAME) {
+						name.push_back(currentReadChar);
+					}
+				}
+			}
+
+			//create a new stopLog obj, using the extracted stopID, lat, and lon
+			StopLog* myNewStopLog = new StopLog(stopID, name, lat, lon);
+
+			//add the stop log to the stop vector
+			this->stops.push_back(myNewStopLog);
+
+		}
+	} 
+}
+
+std::string EventHistory::removeGFIgarbageFromTime(std::string fixMe) {
+	std::string output;
+
+	//iterate through the input stirng until there's a space, then append the rest of the input string to the output
+	char currentReadChar;
+	bool foundSpace = false;
+	for (int i = 0; i < fixMe.size(); i++) {
+		currentReadChar = fixMe.at(i);
+		if (foundSpace == true) {
+			output.push_back(currentReadChar);
+		}
+
+		if (currentReadChar == ' ') {
+			foundSpace = true;
+		}
+	}
+
 	return output;
+
+}
+
+void EventHistory::readFromGFI(std::string FBfilePath, std::unordered_map<std::string, BusHistory*> busHistoryMap) {
+	//go through the file and input all the lines
+	std::ifstream fareboxFile;
+	std::string lineFromFile;
+	fareboxFile.open(FBfilePath);
+	if (fareboxFile.is_open()) {
+		//throw away the first 5 lines
+		getline(fareboxFile, lineFromFile);
+		getline(fareboxFile, lineFromFile);
+		getline(fareboxFile, lineFromFile);
+		getline(fareboxFile, lineFromFile);
+		getline(fareboxFile, lineFromFile);
+
+		//go throught the rest of the lines
+		while(getline(fareboxFile, lineFromFile)) {
+			char currentReadChar;
+			int commaCount = 0;
+
+			//placeholder strings to put the extracted data
+			std::string fleetID;
+			std::string rawTime;
+
+			for (int i = 0; commaCount <= GFI_FLEET_ID + 1; i++) {
+				currentReadChar = lineFromFile.at(i);
+				if (currentReadChar == ',' && lineFromFile.at(i + 1) != ' ') {
+					commaCount++;
+				} else {
+					if (commaCount == GFI_DATE_TIME) {
+						rawTime.push_back(currentReadChar);
+					} else if (commaCount == GFI_FLEET_ID) {
+						fleetID.push_back(currentReadChar);
+					}
+				}
+			}
+
+			//convert the raw time to actual time the actual time to a time int
+			std::string actualTime = removeGFIgarbageFromTime(rawTime);
+			int timeInt = convertTimeStringToInt(actualTime);
+
+			std::cout << actualTime << std::endl;
+
+		}
+	}
+
+}
+
+void EventHistory::printStops() {
+	for (int i = 0; i < this->stops.size(); i++) {
+		std::cout << stops.at(i)->getStopID() << ", " << stops.at(i)->getName() << std::endl;
+	}
 }
