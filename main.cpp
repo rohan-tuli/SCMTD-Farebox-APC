@@ -8,6 +8,6 @@ int main() {
 	//test->printStops();
 	test->readFromGFI("march29_gfi.csv", testMap);
 	test->generateBoardingsPerStopCSV();
-	test->generateEventDistribution("1907");
+	test->generateEventDistribution("1230");
 
 }
