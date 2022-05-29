@@ -133,13 +133,13 @@ StopTime::StopTime(std::string lineFromStopTimeExport) {
 	this->departureTime = removeSyncromaticsGarbageFromTime(rawDepartureTime);
 	this->arrivalTimeInt = convertTimeStringToInt(this->arrivalTime);
 	this->departureTimeInt = convertTimeStringToInt(this->departureTime);
-
+/*
 		std::cout << fleetID << std::endl;
 		std::cout << routePatternName << std::endl;
 		std::cout << stopName << std::endl;
 		std::cout << stopID << std::endl;
 		std::cout << arrivalTime << std::endl;
-		std::cout << departureTime << std::endl << std::endl;
+		std::cout << departureTime << std::endl << std::endl; */
 
 }
 
@@ -364,7 +364,7 @@ void EventHistory::readFromGFI(std::string FBfilePath, std::unordered_map<std::s
 
 void EventHistory::printStops() {
 	for (int i = 0; i < this->stops.size(); i++) {
-		std::cout << stops.at(i)->getStopID() << ", " << stops.at(i)->getName() << std::endl;
+		//std::cout << stops.at(i)->getStopID() << ", " << stops.at(i)->getName() << std::endl;
 	}
 }
 
@@ -398,11 +398,14 @@ void EventHistory::generateEventDistribution(std::string stopID) {
 		if (stopID.compare(this->stops.at(i)->getStopID()) == 0) { //if it's the correct stop ID
 			//get the correct vector
 			std::vector<StopTime*> stopEventVector = this->stops.at(i)->getStopEvents();
-			//go through each stop event and write the departure time (and route) to the file
+
+
+
+			//go through each stop event and write the frequency of departure times (by route) to the file
 			for (int j = 0; j < this->stops.at(i)->getSize(); j++) {
 				outputFile << stopEventVector.at(j)->getRoutePatternName() << ",";
 				outputFile << stopEventVector.at(j)->getDepartureTime() << std::endl;
-			}
+			} 
 
 		}
 	}
