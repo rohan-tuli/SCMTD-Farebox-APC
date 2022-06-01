@@ -166,6 +166,10 @@ std::string StopTime::getRoutePatternName() {
 	return this->routePatternName;
 }
 
+std::string StopTime::getTripID() {
+	return this->tripID;
+}
+
 //remove syncromatics garbage from time
 std::string StopTime::removeSyncromaticsGarbageFromTime(std::string fixme) {
 	std::string output;
@@ -382,6 +386,57 @@ void EventHistory::generateBoardingsPerStopCSV() {
 	}
 	outputFile.close();
 
+}
+
+
+//output stop usage table for a specific route pattern
+void EventHistory::generateStopUsageTable(std::set<std::string> stopsInVariant, std::string routeVariantPattern) {
+	//output every event for the route Variant pattern for each stop in the variant
+	for (int i = 0; i < this->stops.size(); i++) { //iterate through every stop
+		//if the stop ID is one of the stop IDs in the variant
+		if(stopsInVariant.count(this->stops.at(i)->getStopID()) > 0) {
+			//get the stop event vector for this stop
+			std::vector<StopTime*> stopEventVector = this->stops.at(i)->getStopEvents();
+			//go through this stop event and print every departure time that matches the routePatternName
+			
+			//unordered map for the events at this stop, where the key is the trip_id and the value is the number of events
+			std::unordered_map<std::string, int> stopCountMap;
+			std::vector<std::string> tripIDs;
+
+			for (int j = 0; j < this->stops.at(i)->getSize(); j++) {
+				//if the routePatternName matches the routeVariantPattern
+				if (stopEventVector.at(j)->getRoutePatternName().compare(routeVariantPattern) == 0) {
+					//using the tripID as the key, increment the count for that tripID in the map
+					//if the tripID doesn't yet exist, add a new entry for it, with a count of zero
+					if (stopCountMap.count(stopEventVector.at(j)->getTripID()) == 0) {
+						stopCountMap.insert(std::pair<std::string, int>(stopEventVector.at(j)->getTripID(), 0));
+						//add to the vector of tripIDs
+						tripIDs.push_back(stopEventVector.at(j)->getTripID());
+					} else { //if it exists already, increment the count
+						//create an interator to the thingy
+						std::unordered_map<std::string, int>::iterator myIterator;
+						//point the iterator to the correct tripID
+						myIterator = stopCountMap.find(stopEventVector.at(j)->getTripID());
+						//increment the count at the iterator
+						myIterator->second++;
+					}
+					
+
+					//output the trip ID and the time
+					//std::cout << stopEventVector.at(j)->getStopID() << ", ";
+					//std::cout << stopEventVector.at(j)->getTripID() << ", " << stopEventVector.at(j)->getDepartureTime() << std::endl;
+				}
+			}
+
+			//print the map
+			for (int k = 0; k < tripIDs.size(); k++) {
+				std::unordered_map<std::string, int>::iterator printIterator;
+				printIterator = stopCountMap.find(tripIDs.at(k));
+				std::cout << this->stops.at(i)->getStopID() << ", " << tripIDs.at(k) << ", " << printIterator->second << std::endl;
+			}
+		}
+
+	}
 }
 
 //output distribution of events for a specific stop

@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <set>
 #include <iostream>
 #include <fstream>
 #include <unordered_map>
@@ -42,6 +43,7 @@ public:
 	std::string getDepartureTime();
 	std::string getStopID();
 	std::string getRoutePatternName();
+	std::string getTripID();
 private:
 	//values
 	std::string arrivalTime;
@@ -126,6 +128,9 @@ public:
 
 	//output distribution of events for a specific stop
 	void generateEventDistribution(std::string stopID);
+	
+	//output stop usage table for a specific route pattern
+	void generateStopUsageTable(std::set<std::string> stopsInVariant, std::string routeVariantPattern);
 private:
 	std::string removeGFIgarbageFromTime(std::string fixMe);
 	std::vector<StopLog*> stops;
