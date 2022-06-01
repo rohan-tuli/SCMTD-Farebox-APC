@@ -391,6 +391,8 @@ void EventHistory::generateBoardingsPerStopCSV() {
 
 //output stop usage table for a specific route pattern
 void EventHistory::generateStopUsageTable(std::set<std::string> stopsInVariant, std::string routeVariantPattern) {
+	std::vector<std::string> tripIDs; //every trip ID served by the variant
+
 	//output every event for the route Variant pattern for each stop in the variant
 	for (int i = 0; i < this->stops.size(); i++) { //iterate through every stop
 		//if the stop ID is one of the stop IDs in the variant
@@ -401,7 +403,7 @@ void EventHistory::generateStopUsageTable(std::set<std::string> stopsInVariant, 
 			
 			//unordered map for the events at this stop, where the key is the trip_id and the value is the number of events
 			std::unordered_map<std::string, int> stopCountMap;
-			std::vector<std::string> tripIDs;
+
 
 			for (int j = 0; j < this->stops.at(i)->getSize(); j++) {
 				//if the routePatternName matches the routeVariantPattern
@@ -410,8 +412,17 @@ void EventHistory::generateStopUsageTable(std::set<std::string> stopsInVariant, 
 					//if the tripID doesn't yet exist, add a new entry for it, with a count of zero
 					if (stopCountMap.count(stopEventVector.at(j)->getTripID()) == 0) {
 						stopCountMap.insert(std::pair<std::string, int>(stopEventVector.at(j)->getTripID(), 0));
-						//add to the vector of tripIDs
-						tripIDs.push_back(stopEventVector.at(j)->getTripID());
+						//add to the vector of tripIDs (if it does't already exist)
+						bool doesItemExistInVector = false;
+						for (int m = 0; m < tripIDs.size(); m++) {
+							if (tripIDs.at(m).compare(stopEventVector.at(j)->getTripID()) == 0) {
+								doesItemExistInVector = true;
+							}
+						}
+						if (doesItemExistInVector == false) {
+							tripIDs.push_back(stopEventVector.at(j)->getTripID());
+						}
+
 					} else { //if it exists already, increment the count
 						//create an interator to the thingy
 						std::unordered_map<std::string, int>::iterator myIterator;
