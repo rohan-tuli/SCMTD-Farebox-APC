@@ -443,7 +443,7 @@ void EventHistory::generateStopUsageTable(std::set<std::string> stopsInVariant, 
 			for (int k = 0; k < tripIDs.size(); k++) {
 				std::unordered_map<std::string, int>::iterator printIterator;
 				printIterator = stopCountMap.find(tripIDs.at(k));
-				outputFile << this->stops.at(i)->getStopID() << ", " << tripIDs.at(k) << ", " << printIterator->second << std::endl;
+				outputFile << this->stops.at(i)->getStopID() << ", " << tripIDs.at(k) << ", " << printIterator->second << "," << std::endl;
 
 			}
 		}
