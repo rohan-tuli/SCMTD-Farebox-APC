@@ -700,7 +700,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,stop_url,is_trans_ctr,at
 2620R,2620,Soquel Dr & Heather Terrace,,36.982883,-121.912354,http://scmtd.com/stop/2620,0,0,1
 2622R,2622,Hanger Way & Neilson,,36.928905,-121.790894,http://scmtd.com/stop/2622,0,0,1
 2623R,2623,Neilson & Airport Blvd (Wats. Hospital),,36.92836,-121.793121,http://scmtd.com/stop/2623,0,0,2
-2624R,SVTC,Cavallaro Transit Center (Scotts Valley),,37.049004,-122.02774,http://scmtd.com/stop/SVTC,1,1,4
+2624R,2624,Cavallaro Transit Center (Scotts Valley),,37.049004,-122.02774,http://scmtd.com/stop/SVTC,1,1,4
 2627R,2627,Front & Pacific Ave,,36.976376,-122.026566,http://scmtd.com/stop/2627,0,0,2
 2628R,2628,Clifford Ave & Sherwood Ct,,36.918819,-121.776115,http://scmtd.com/stop/2628,0,0,3
 2629R,2629,Clifford Ave & Montebello Dr,,36.918736,-121.775993,http://scmtd.com/stop/2629,0,0,2
@@ -749,10 +749,10 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,stop_url,is_trans_ctr,at
 2697R,2697,Pacific & Center,,36.965668,-122.02536,http://scmtd.com/stop/2697,0,0,1
 2699R,2699,Capitola Ave & Bay Ave,,36.978306,-121.953102,http://scmtd.com/stop/2699,0,0,1
 2700R,SCMC,Santa Cruz Metro Center,,36.970673,-122.024979,http://scmtd.com/stop/SCMC,1,0,4
-2701R,SCMC1,Santa Cruz Metro Center - Lane 1,,36.971077,-122.024574,http://scmtd.com/stop/SCMC1,0,1,4
-2702R,SCMC2,Santa Cruz Metro Center - Lane 2,,36.970917,-122.024529,http://scmtd.com/stop/SCMC2,0,1,4
-2703R,SCMC3,Santa Cruz Metro Center - Lane 3,,36.970795,-122.024475,http://scmtd.com/stop/SCMC3,0,1,4
-2704R,SCMC4,Santa Cruz Metro Center - Lane 4,,36.970615,-122.024475,http://scmtd.com/stop/SCMC4,0,1,4
+2701R,2701,Santa Cruz Metro Center - Lane 1,,36.971077,-122.024574,http://scmtd.com/stop/SCMC1,0,1,4
+2702R,2702,Santa Cruz Metro Center - Lane 2,,36.970917,-122.024529,http://scmtd.com/stop/SCMC2,0,1,4
+2703R,2703,Santa Cruz Metro Center - Lane 3,,36.970795,-122.024475,http://scmtd.com/stop/SCMC3,0,1,4
+2704R,2704,Santa Cruz Metro Center - Lane 4,,36.970615,-122.024475,http://scmtd.com/stop/SCMC4,0,1,4
 2705R,2705,W Beach (#600),,36.905781,-121.76696,http://scmtd.com/stop/2705,0,0,1
 2706R,2706,Ohlone Pkwy & Lighthouse Dr,,36.907745,-121.774651,http://scmtd.com/stop/2706,0,0,1
 2707R,2707,Ohlone Pkwy & Loma Vista,,36.910149,-121.774933,http://scmtd.com/stop/2707,0,0,1
@@ -792,8 +792,8 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,stop_url,is_trans_ctr,at
 2750R,2750,McAllister Way (Coastal Biology Building),,36.952583,-122.065437,http://scmtd.com/stop/2750,0,0,2
 2751R,2751,Union & Beach,,36.91111,-121.756271,http://scmtd.com/stop/2751,0,0,1
 2800R,CAPM,Capitola Mall,,36.975555,-121.966148,http://scmtd.com/stop/CAPM,1,0,4
-2801R,CAPM1,Capitola Mall - Lane 1,,36.975433,-121.966217,http://scmtd.com/stop/CAPM1,0,1,4
-2802R,CAPM2,Capitola Mall - Lane 2,,36.975677,-121.966087,http://scmtd.com/stop/CAPM2,0,1,4
+2801R,2801,Capitola Mall - Lane 1,,36.975433,-121.966217,http://scmtd.com/stop/CAPM1,0,1,4
+2802R,2802,Capitola Mall - Lane 2,,36.975677,-121.966087,http://scmtd.com/stop/CAPM2,0,1,4
 2900R,WTC,Watsonville Transit Center,,36.909691,-121.759972,http://scmtd.com/stop/WTC,1,0,4
-2901R,WTC1,Watsonville Transit Center - Lane 1,,36.909863,-121.760071,http://scmtd.com/stop/WTC1,0,1,4
-2902R,WTC2,Watsonville Transit Center - Lane 2,,36.909775,-121.760223,http://scmtd.com/stop/WTC2,0,1,4
+2901R,2901,Watsonville Transit Center - Lane 1,,36.909863,-121.760071,http://scmtd.com/stop/WTC1,0,1,4
+2902R,2902,Watsonville Transit Center - Lane 2,,36.909775,-121.760223,http://scmtd.com/stop/WTC2,0,1,4

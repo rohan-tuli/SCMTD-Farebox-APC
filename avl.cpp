@@ -394,6 +394,12 @@ void EventHistory::generateStopUsageTable(std::set<std::string> stopsInVariant, 
 	std::ofstream outputFile;
 	std::string fileName = routeVariantPattern;
 	fileName.append(".csv");
+	//replace / with -
+	for (int z = 0; z < fileName.length(); z++) {
+		if (fileName.at(z) == '/') {
+			fileName.at(z) = '-';
+		}
+	}
 	outputFile.open(fileName);
 
 	//output the line of headers
