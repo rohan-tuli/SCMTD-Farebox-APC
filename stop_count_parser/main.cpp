@@ -16,60 +16,78 @@ int main() {
 
 	//vector of stop_ids for each route
 	std::vector<std::string> stopIDs;
-	stopIDs.push_back("2704");
-	stopIDs.push_back("2666");
-	stopIDs.push_back("1781");	
-	stopIDs.push_back("1783");
-	stopIDs.push_back("2668");
-	stopIDs.push_back("1791");
-	stopIDs.push_back("1793");
-	stopIDs.push_back("2186");
-	stopIDs.push_back("1795");
-	stopIDs.push_back("1797");
-	stopIDs.push_back("1800");
-	stopIDs.push_back("1289");
-	stopIDs.push_back("1290");
-	stopIDs.push_back("2642");
-	stopIDs.push_back("1293");
-	stopIDs.push_back("1297");
-	stopIDs.push_back("1299");
-	stopIDs.push_back("1301");
-	stopIDs.push_back("1302");
-	stopIDs.push_back("2802");
-	stopIDs.push_back("2148");
-	stopIDs.push_back("2149");
-	stopIDs.push_back("1818");
-	stopIDs.push_back("1820");
-	stopIDs.push_back("1823");
-	stopIDs.push_back("1824");
-	stopIDs.push_back("1825");
-	stopIDs.push_back("1830");
-	stopIDs.push_back("1832");
-	stopIDs.push_back("1835");
-	stopIDs.push_back("1836");
-	stopIDs.push_back("2722");
-	stopIDs.push_back("1840");
-	stopIDs.push_back("1848");
-	stopIDs.push_back("1144");
-	stopIDs.push_back("1142");
-	stopIDs.push_back("1139");
-	stopIDs.push_back("2204");
 
+	
+	stopIDs.push_back("2701");
+	stopIDs.push_back("2679");
+	stopIDs.push_back("2592");
+	stopIDs.push_back("2582");
+	stopIDs.push_back("2583");
+	stopIDs.push_back("2584");
+	stopIDs.push_back("1220");
+	stopIDs.push_back("2291");
+	stopIDs.push_back("1223");
+	stopIDs.push_back("1226");
+	stopIDs.push_back("1227");
+	stopIDs.push_back("1228");
+	stopIDs.push_back("1230");
+	stopIDs.push_back("1232");
+	stopIDs.push_back("2375");
+	stopIDs.push_back("2374");
+
+	stopIDs.push_back("2376");
+	stopIDs.push_back("1231");
+	stopIDs.push_back("2056");
+	stopIDs.push_back("1225");
+	stopIDs.push_back("1224");
+	stopIDs.push_back("1222");
+	stopIDs.push_back("1219");
+	stopIDs.push_back("2585");
+	stopIDs.push_back("2586");
+	stopIDs.push_back("2587");
+	stopIDs.push_back("2593");
+	
 
 	//vector of trip_ids
 	std::vector<std::string> tripIDs;
 
-	tripIDs.push_back("693501");
-	tripIDs.push_back("693202");
-	tripIDs.push_back("693303");
-	tripIDs.push_back("353701");
-	tripIDs.push_back("693204");
-	tripIDs.push_back("693305");
-	tripIDs.push_back("353703");
-	tripIDs.push_back("693206");
-	tripIDs.push_back("693507");
-	tripIDs.push_back("693108");
-	tripIDs.push_back("693309");
+
+	tripIDs.push_back("155101");
+	tripIDs.push_back("180201");
+	tripIDs.push_back("190201");
+	tripIDs.push_back("180202");
+	tripIDs.push_back("190202");
+	tripIDs.push_back("180203");
+	tripIDs.push_back("190203");
+	tripIDs.push_back("190104");
+	tripIDs.push_back("180105");
+	tripIDs.push_back("190304");
+	tripIDs.push_back("180305");
+	tripIDs.push_back("190403");
+	tripIDs.push_back("180306");
+	tripIDs.push_back("190206");
+	tripIDs.push_back("190107");
+	tripIDs.push_back("190405");
+	tripIDs.push_back("190307");
+	tripIDs.push_back("180208");
+	tripIDs.push_back("190308");
+	tripIDs.push_back("190109");
+	tripIDs.push_back("190407");
+	tripIDs.push_back("190502");
+	tripIDs.push_back("180210");
+	tripIDs.push_back("155602");
+	tripIDs.push_back("190503");
+	tripIDs.push_back("190111");
+	tripIDs.push_back("155505");
+	tripIDs.push_back("190211");
+	tripIDs.push_back("190212");
+	tripIDs.push_back("155507");
+	tripIDs.push_back("190213");
+	tripIDs.push_back("155704");
+	tripIDs.push_back("190214");
+	tripIDs.push_back("155705");
+	tripIDs.push_back("190215");
+
 
 
 	//for each trip_id

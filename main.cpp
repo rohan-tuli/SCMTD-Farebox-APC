@@ -1,19 +1,97 @@
 #include "avl.h"
 
 int main() {
-	std::unordered_map<std::string, BusHistory*> testMap = getAVL("april3.csv");
+	std::unordered_map<std::string, BusHistory*> testMap = getAVL("april12.csv");
 
 	//test loading file
 	EventHistory* test = new EventHistory("stops.csv");
 	//test->printStops();
-	test->readFromGFI("april3_gfi.csv", testMap);
+	test->readFromGFI("april12_gfi.csv", testMap);
 	//test->generateBoardingsPerStopCSV();
-	//test->generateEventDistribution("1517");
+	//test->generateEventDistribution("2302");
 
 	std::set<std::string> routeVariantStops;
 	//18 variant stops
 
 	
+	/*
+	std::string routeVariantName = "17-08-53-Caltrain";
+
+	routeVariantStops.insert("2702");
+	routeVariantStops.insert("1570");
+	routeVariantStops.insert("1652");
+	routeVariantStops.insert("2624");
+	routeVariantStops.insert("1653");
+	*/
+
+	
+	
+	std::string routeVariantName = "15-00-10-UCSC via Laurel West";
+	routeVariantStops.insert("2701");
+	routeVariantStops.insert("1591");
+	routeVariantStops.insert("2731");
+	routeVariantStops.insert("1630");
+	routeVariantStops.insert("1226");
+	routeVariantStops.insert("1227");
+	routeVariantStops.insert("1228");
+	routeVariantStops.insert("1230");
+	routeVariantStops.insert("1232");
+
+	routeVariantStops.insert("2376");
+	routeVariantStops.insert("1231");
+	routeVariantStops.insert("2056");
+	routeVariantStops.insert("1625");
+	routeVariantStops.insert("1629");
+	routeVariantStops.insert("1590");
+	routeVariantStops.insert("2572");
+	
+	
+
+
+	/*
+	std::string routeVariantName = "69W-01-6-Capitola Rd/SC IB";
+
+	routeVariantStops.insert("2901");
+	routeVariantStops.insert("2192");
+	routeVariantStops.insert("1141");
+	routeVariantStops.insert("1143");
+	routeVariantStops.insert("1849");
+	routeVariantStops.insert("1839");
+	routeVariantStops.insert("1838");
+	routeVariantStops.insert("1837");
+	routeVariantStops.insert("1834");
+	routeVariantStops.insert("1833");
+	routeVariantStops.insert("1831");
+	routeVariantStops.insert("1829");
+	routeVariantStops.insert("1827");
+	routeVariantStops.insert("1826");
+	routeVariantStops.insert("1822");
+	routeVariantStops.insert("1821");
+	routeVariantStops.insert("2152");
+	routeVariantStops.insert("2151");
+	routeVariantStops.insert("2801");
+	routeVariantStops.insert("2377");
+	routeVariantStops.insert("1300");
+	routeVariantStops.insert("1298");
+	routeVariantStops.insert("1294");
+	routeVariantStops.insert("2341");
+	routeVariantStops.insert("2340");
+	routeVariantStops.insert("1291");
+	routeVariantStops.insert("1288");
+	routeVariantStops.insert("1799");
+	routeVariantStops.insert("1798");
+	routeVariantStops.insert("1796");
+	routeVariantStops.insert("1794");
+	routeVariantStops.insert("1792");
+	routeVariantStops.insert("1790");
+	routeVariantStops.insert("1788");
+	routeVariantStops.insert("1784");
+	routeVariantStops.insert("1782");
+	routeVariantStops.insert("2365");
+	*/
+
+
+	/*
 	std::string routeVariantName = "69W-00-5-Capitola Rd/Wats OB";
 
 	routeVariantStops.insert("2704");
@@ -54,7 +132,7 @@ int main() {
 	routeVariantStops.insert("1142");
 	routeVariantStops.insert("1139");
 	routeVariantStops.insert("2204");
-	
+	*/	
 
 	/*
 	std::string routeVariantName = "18-00-1-UCSC via Mission";
@@ -83,8 +161,8 @@ int main() {
 	routeVariantStops.insert("2572");
 	*/
 	
-
 	/*
+	
 	std::string routeVariantName = "10-00-11-UCSC via High";
 	routeVariantStops.insert("2303");
 	routeVariantStops.insert("2304");
@@ -104,10 +182,13 @@ int main() {
 	routeVariantStops.insert("1638");
 	routeVariantStops.insert("2627");
 	routeVariantStops.insert("2364");
+	
 	*/
-
 	/*
 	std::string routeVariantName = "19-00-13-UCSC via Lower Bay";
+	routeVariantStops.insert("2701");
+	routeVariantStops.insert("2679");
+	routeVariantStops.insert("2592");
 	routeVariantStops.insert("2592");
 	routeVariantStops.insert("2582");
 	routeVariantStops.insert("2583");
@@ -120,6 +201,9 @@ int main() {
 	routeVariantStops.insert("1228");
 	routeVariantStops.insert("1230");
 	routeVariantStops.insert("1232");
+	routeVariantStops.insert("2375");
+	routeVariantStops.insert("2374");
+
 	routeVariantStops.insert("2376");
 	routeVariantStops.insert("1231");
 	routeVariantStops.insert("2056");
@@ -132,6 +216,7 @@ int main() {
 	routeVariantStops.insert("2587");
 	routeVariantStops.insert("2593");
 	*/
+	
 
 	/*
 	std::string routeVariantName = "20-07-26-UCSC via Westside CSC IB";
