@@ -130,7 +130,7 @@ public:
 	void generateEventDistribution(std::string stopID);
 	
 	//output stop usage table for a specific route pattern
-	void generateStopUsageTable(std::set<std::string> stopsInVariant, std::string routeVariantPattern);
+	void generateStopUsageTable(std::string sourceData, std::set<std::string> stopsInVariant, std::string routeVariantPattern);
 private:
 	std::string removeGFIgarbageFromTime(std::string fixMe);
 	std::vector<StopLog*> stops;

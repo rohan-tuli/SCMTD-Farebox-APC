@@ -390,9 +390,11 @@ void EventHistory::generateBoardingsPerStopCSV() {
 
 
 //output stop usage table for a specific route pattern
-void EventHistory::generateStopUsageTable(std::set<std::string> stopsInVariant, std::string routeVariantPattern) {
+void EventHistory::generateStopUsageTable(std::string sourceData, std::set<std::string> stopsInVariant, std::string routeVariantPattern) {
 	std::ofstream outputFile;
 	std::string fileName = routeVariantPattern;
+	fileName.append("_");
+	fileName.append(sourceData);
 	fileName.append(".csv");
 	//replace / with -
 	for (int z = 0; z < fileName.length(); z++) {
@@ -403,7 +405,7 @@ void EventHistory::generateStopUsageTable(std::set<std::string> stopsInVariant, 
 	outputFile.open(fileName);
 
 	//output the line of headers
-	outputFile << "stopID,trip,count" << std::endl;
+	//outputFile << "stopID,trip,count" << std::endl;
 
 
 	//output every event for the route Variant pattern for each stop in the variant
