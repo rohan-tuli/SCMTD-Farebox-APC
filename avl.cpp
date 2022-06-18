@@ -372,9 +372,12 @@ void EventHistory::printStops() {
 	}
 }
 
-void EventHistory::generateBoardingsPerStopCSV() {
+void EventHistory::generateBoardingsPerStopCSV(std::string date) {
 	std::ofstream outputFile;
-	outputFile.open("boardings_per_stop.csv");
+	std::string fileName = "boardings_per_stop_";
+	fileName.append(date);
+	fileName.append(".csv");
+	outputFile.open(fileName);
 	//output column headers to file
 	outputFile << "lat, lon, stop_id, stop_name, usage\n";
 	for (int i = 0; i < this->stops.size(); i++) {
@@ -393,8 +396,8 @@ void EventHistory::generateBoardingsPerStopCSV() {
 void EventHistory::generateStopUsageTable(std::string sourceData, std::set<std::string> stopsInVariant, std::string routeVariantPattern) {
 	std::ofstream outputFile;
 	std::string fileName = routeVariantPattern;
-	fileName.append("_");
-	fileName.append(sourceData);
+	//fileName.append("_");
+	//fileName.append(sourceData);
 	fileName.append(".csv");
 	//replace / with -
 	for (int z = 0; z < fileName.length(); z++) {
@@ -402,7 +405,7 @@ void EventHistory::generateStopUsageTable(std::string sourceData, std::set<std::
 			fileName.at(z) = '-';
 		}
 	}
-	outputFile.open(fileName);
+	outputFile.open(fileName, std::ios_base::app);
 
 	//output the line of headers
 	//outputFile << "stopID,trip,count" << std::endl;

@@ -17,79 +17,46 @@ int main() {
 	//vector of stop_ids for each route
 	std::vector<std::string> stopIDs;
 
-stopIDs.push_back("2901");
-stopIDs.push_back("1177");
-stopIDs.push_back("1179");
-stopIDs.push_back("2192");
-stopIDs.push_back("2734");
-stopIDs.push_back("1141");
-stopIDs.push_back("1143");
-stopIDs.push_back("2738");
-stopIDs.push_back("2480");
-stopIDs.push_back("2209");
-stopIDs.push_back("2481");
-stopIDs.push_back("1182");
-stopIDs.push_back("1183");
-stopIDs.push_back("1185");
-stopIDs.push_back("2714");
-stopIDs.push_back("2491");
-stopIDs.push_back("1095");
-stopIDs.push_back("1084");
-stopIDs.push_back("1086");
-stopIDs.push_back("1006");
-stopIDs.push_back("2433");
-stopIDs.push_back("2436");
-stopIDs.push_back("1015");
-stopIDs.push_back("2195");
-stopIDs.push_back("1020");
-stopIDs.push_back("2196");
-stopIDs.push_back("2197");
-stopIDs.push_back("1026");
-stopIDs.push_back("2198");
-stopIDs.push_back("2265");
-stopIDs.push_back("2576");
-stopIDs.push_back("2226");
-stopIDs.push_back("1113");
-stopIDs.push_back("1110");
-stopIDs.push_back("2227");
-stopIDs.push_back("2453");
-stopIDs.push_back("1105");
-stopIDs.push_back("2228");
-stopIDs.push_back("1101");
-stopIDs.push_back("2434");
-stopIDs.push_back("2407");
-stopIDs.push_back("2655");
-stopIDs.push_back("2224");
-stopIDs.push_back("2413");
-stopIDs.push_back("2724");
-stopIDs.push_back("2414");
-stopIDs.push_back("2381");
-stopIDs.push_back("2470");
-stopIDs.push_back("1092");
-stopIDs.push_back("1144");
-stopIDs.push_back("1142");
-stopIDs.push_back("1139");
-stopIDs.push_back("1137");
-stopIDs.push_back("2204");
-stopIDs.push_back("2205");
-	
+stopIDs.push_back("2801");
+stopIDs.push_back("2167");
+stopIDs.push_back("2163");
+stopIDs.push_back("2161");
+stopIDs.push_back("2159");
+stopIDs.push_back("1692");
+stopIDs.push_back("1690");
+stopIDs.push_back("1687");
+stopIDs.push_back("2177");
+stopIDs.push_back("1682");
+stopIDs.push_back("2617");
+stopIDs.push_back("2173");
+stopIDs.push_back("2174");
+stopIDs.push_back("2175");
+stopIDs.push_back("2178");
+stopIDs.push_back("1269");
+stopIDs.push_back("1266");
+stopIDs.push_back("2296");
+stopIDs.push_back("1263");
+stopIDs.push_back("1917");
+stopIDs.push_back("1919");
+stopIDs.push_back("2732");
+stopIDs.push_back("2352");
+stopIDs.push_back("1803");
+stopIDs.push_back("1801");
+stopIDs.push_back("1799");
+stopIDs.push_back("1798");
+stopIDs.push_back("1796");
+stopIDs.push_back("1903");
+stopIDs.push_back("1901");
+stopIDs.push_back("1899");
+stopIDs.push_back("1895");
+stopIDs.push_back("1894");
+stopIDs.push_back("1457");
+stopIDs.push_back("2364");
 
 	//vector of trip_ids
 	std::vector<std::string> tripIDs;
 
-tripIDs.push_back("750103");
-tripIDs.push_back("750104");
-tripIDs.push_back("750303");
-tripIDs.push_back("750204");
-tripIDs.push_back("750107");
-tripIDs.push_back("750306");
-tripIDs.push_back("750207");
-tripIDs.push_back("750110");
-tripIDs.push_back("750309");
-tripIDs.push_back("750310");
-tripIDs.push_back("790113");
-tripIDs.push_back("790114");
-
+tripIDs.push_back("660202");
 
 	//for each trip_id
 

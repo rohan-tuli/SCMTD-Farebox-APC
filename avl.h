@@ -124,7 +124,7 @@ public:
 	void printStops();
 
 	//output total usage per stop CSV
-	void generateBoardingsPerStopCSV();
+	void generateBoardingsPerStopCSV(std::string date);
 
 	//output distribution of events for a specific stop
 	void generateEventDistribution(std::string stopID);

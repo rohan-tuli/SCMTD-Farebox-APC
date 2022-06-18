@@ -1,0 +1,799 @@
+lat, lon, stop_id, stop_name, usage
+37.325184,-121.90052,901,Barack Obama Blvd & W San Carlos,0
+37.324215,-121.900337,902,Barack Obama Blvd & W San Carlos,1
+37.330288,-121.902687,904,Diridon Station (Caltrain Depot),93
+37.331902,-121.899567,906,W Santa Clara & Delmas Ave,0
+37.333908,-121.89518,908,W Santa Clara & Almaden Blvd,0
+37.336311,-121.889877,910,E Santa Clara & S 1st,0
+37.335377,-121.892365,912,W Santa Clara & S Market,1
+37.33218,-121.89959,913,W Santa Clara & Delmas Ave,1
+37.337299,-121.883209,914,E San Fernando & S 7th,12
+37.325169,-121.90094,915,Barack Obama Blvd & Park Ave,1
+37.165234,-122.163177,918,Big Basin Way & China Grade Rd,3
+37.33379,-121.895737,920,W Santa Clara & Almaden Blvd,0
+37.327213,-121.900436,923,Barack Obama Blvd & Park Ave,0
+37.338436,-121.885567,924,E Santa Clara & S 6th,0
+37.338409,-121.886139,925,E Santa Clara & N 5th,5
+36.934383,-121.782814,1001,Airport Blvd & Airport Rd,0
+36.934322,-121.783485,1002,Airport Blvd (Airport),1
+36.931953,-121.787842,1005,Airport Blvd & Holm Rd,5
+36.939846,-121.77655,1006,Airport Blvd (Freedom Centre),39
+36.946316,-121.767708,1015,Amesti Rd & Green Valley Rd (Amesti School),0
+36.956173,-121.781731,1020,Amesti Rd & Mann Ave,4
+36.967934,-121.793793,1026,Amesti Rd & Bollinger Pl,0
+36.939789,-121.791351,1034,Bowker Rd & Buena Vista Dr,0
+36.941872,-121.790672,1035,Bowker Rd & Calabasas Rd,0
+36.918427,-121.743027,1040,E Bronte Ave & Ester Way,1
+36.988743,-121.806686,1044,Browns Valley Rd & Corralitos Rd,0
+36.924629,-121.773865,1045,Clifford Ave (Clifford Manor),0
+36.924191,-121.773895,1046,Clifford Ave & Lassen Way,3
+36.926682,-121.772972,1047,Clifford Ave & Melrose Ave,0
+36.927647,-121.7715,1049,Clifford Ave & Crescent Dr,3
+36.929779,-121.768669,1051,Clifford Ave & Freedom Blvd,1
+36.933037,-121.734009,1052,College Rd & Parker Dr,2
+36.934174,-121.738052,1053,College Rd & Cutter Dr,0
+36.935867,-121.742928,1054,College Rd & E Lake Ave,3
+36.975407,-121.806442,1056,Corralitos Rd (Bradley Elementary),0
+36.96804,-121.807327,1057,Corralitos Rd & Varni Rd,0
+36.912575,-121.753555,1059,E Beach & Marchant,19
+36.915508,-121.749451,1060,E Beach & Blackburn,0
+36.916798,-121.747749,1061,E Beach & Beck,0
+36.91856,-121.745316,1062,E Beach & Hushbeck Ave,0
+36.913342,-121.756165,1064,E Lake & Sudden,0
+36.924847,-121.746262,1069,E Lake & Martinelli (East Lake Village),1
+36.925247,-121.745865,1070,E Lake & Martinelli (East Lake Village),0
+36.916782,-121.760345,1077,Freedom Blvd & Brennan,4
+36.920795,-121.760757,1078,Freedom Blvd & Stanford,6
+36.929951,-121.767693,1080,Freedom Blvd & Atkinson Ln,5
+36.931419,-121.769493,1081,Freedom Blvd & Sydney Ave,4
+36.931553,-121.769249,1082,Freedom Blvd & Blanca Ln,16
+36.933136,-121.771362,1083,Freedom Blvd & Davis Ave,8
+36.935398,-121.773621,1084,Freedom Blvd & Green Valley Rd,10
+36.937725,-121.776543,1086,Freedom Blvd & Airport Blvd (Freedom Centre),10
+36.939388,-121.780052,1087,Freedom Blvd & Emme,4
+36.939522,-121.779884,1088,Freedom Blvd & Compton Ter,6
+36.944496,-121.787468,1089,Freedom Blvd & Bowker Rd,5
+36.944565,-121.787308,1090,Freedom Blvd & Bowker Rd,10
+36.919697,-121.783035,1091,S Green Valley Rd & Melwood,3
+36.920185,-121.783089,1092,S Green Valley Rd & Melwood,0
+36.923981,-121.780571,1093,S Green Valley Rd & Oakridge,0
+36.928143,-121.778175,1094,S Green Valley Rd & Hope Dr (Kingdom Hall),0
+36.930405,-121.776855,1095,S Green Valley Rd & Pennsylvania Dr,1
+36.935593,-121.772751,1097,Green Valley Rd & Freedom Blvd,17
+36.939835,-121.770195,1098,Green Valley Rd & Holohan Rd (The Towers),7
+36.939571,-121.77005,1099,Green Valley Rd & Holohan Rd (The Towers),9
+36.937897,-121.770973,1100,Green Valley Rd & Carnation Dr (Medical Plaza),16
+36.946037,-121.766762,1101,Green Valley Rd & Amesti Rd,1
+36.945976,-121.766525,1102,Green Valley Rd & Amesti Rd,0
+36.948223,-121.765282,1103,Green Valley Rd & Behler Rd (Pinto Lake Pk),1
+36.950825,-121.764969,1105,Green Valley Rd & Mello View Ln,3
+36.951668,-121.764816,1106,Green Valley Rd & Minto Rd,0
+36.958069,-121.764832,1109,Green Valley Rd & Trembly Ln,2
+36.961384,-121.765038,1110,Green Valley Rd & Klassen Ln,5
+36.961143,-121.764877,1111,Green Valley Rd & Klassen Ln,0
+36.963707,-121.764847,1112,Green Valley Rd & Dalton Ln,0
+36.963921,-121.76506,1113,Green Valley Rd & Rancho Todos Santos Rd,0
+36.930271,-121.791168,1116,Hangar Way & Airport Blvd,1
+36.924446,-121.784691,1118,Herman Ave (Rolling Hills Middle School),0
+36.931274,-121.732437,1127,Lakeview Rd & Parkwood Dr,3
+36.922462,-121.783279,1130,Kralj Dr & Lawrence Ave,0
+36.9151,-121.763763,1136,Main & Rodriguez,0
+36.915791,-121.767921,1137,Main & Auto Center Dr,1
+36.91634,-121.771217,1139,Main & Pennsylvania Dr,8
+36.917484,-121.776237,1141,Main & Clifford Ave,34
+36.91724,-121.776535,1142,Main & Ohlone Pkwy,21
+36.918545,-121.78241,1143,Main & S Green Valley Rd,37
+36.918312,-121.782959,1144,Main & S Green Valley Rd,18
+36.926193,-121.759125,1145,Martinelli & Brewington,0
+36.927055,-121.755745,1147,Martinelli & Bronson,0
+36.926243,-121.751091,1149,Martinelli & Washington,0
+36.927223,-121.80043,1151,Manfre Rd & Larkin Valley Rd,0
+36.933067,-121.798981,1152,Manfre Rd & Lucerne Ave,0
+36.935547,-121.79834,1153,Manfre Rd (#222),0
+36.93935,-121.797974,1154,Manfre Rd & Buena Vista Dr,1
+36.911922,-121.762352,1177,Rodriguez & W 5th,1
+36.913074,-121.764084,1179,Rodriguez & Ford,0
+36.933208,-121.785034,1181,Airport Blvd & Ross Ave,1
+36.925869,-121.785385,1182,Shady Oaks Dr & Anna,0
+36.927441,-121.785362,1183,Shady Oaks Dr & Jeanette Way,0
+36.929909,-121.78537,1185,Sunnyhills Dr & Shady Oaks Dr,2
+36.921505,-121.741806,1191,Tuttle Ave & Cedar Dr,1
+36.922249,-121.746529,1193,Tuttle Ave & E Lake Ave,2
+36.969791,-121.904785,1209,Aptos Beach Dr & Marina Ave,1
+36.979069,-121.953644,1216,Bay Ave & Capitola Ave,3
+36.980904,-121.95549,1217,Bay Ave & Hill,0
+36.962437,-122.034164,1219,Bay & Columbia (Garfield Park Village),10
+36.962482,-122.033958,1220,Bay & Columbia (Garfield Park Village),4
+36.963928,-122.036446,1222,Bay & Redwood,0
+36.965504,-122.038521,1223,Bay & Seaside,11
+36.965202,-122.038338,1224,Bay & Seaside,1
+36.966209,-122.039833,1225,Bay & Mission (Bay View School),5
+36.966919,-122.040604,1226,Bay & Mission,111
+36.9683,-122.043312,1227,Bay & King,48
+36.96941,-122.045906,1228,Bay & Escalona Dr,6
+36.974297,-122.0504,1230,Bay Dr & Iowa Dr,168
+36.973709,-122.05011,1231,Bay Dr & Nobel Dr,16
+36.975456,-122.052437,1232,Bay Dr & Meder,8
+37.125347,-122.122658,1236,Big Basin Way & Hwy 9,2
+37.1306,-122.134613,1237,Big Basin Way & Boulder Brook Dr,0
+37.124828,-122.12619,1238,Big Basin Way & Redwood Ave,5
+37.135456,-122.1409,1239,Big Basin Way & Ridge Dr (Forest Pool),5
+37.138317,-122.143929,1240,Big Basin Way (Brackenbrae Br),0
+37.139378,-122.148872,1241,Big Basin Way & Acorn Dr,0
+37.138859,-122.148087,1242,Big Basin Way & Acorn Dr,2
+37.144855,-122.156685,1243,Big Basin Way & Fallen Leaf Dr,0
+37.144703,-122.156837,1244,Big Basin Way & Fallen Leaf Dr,1
+37.146034,-122.157898,1246,Big Basin Way & Jamison Creek Rd,1
+37.153385,-122.161385,1247,Big Basin Way (Country Club),6
+37.065868,-122.151726,1250,Bonny Doon Rd & Phillips Ranch Rd (Mc Henry Vnyd),1
+37.052711,-122.160866,1251,Bonny Doon Rd (Country Estates Terrace),0
+36.971329,-122.022049,1254,Broadway & Riverside Ave,0
+36.972656,-122.019501,1255,Broadway & Clay,0
+36.972805,-122.019524,1256,Broadway & Clay,0
+36.973503,-122.017769,1257,Broadway & Ocean,11
+36.974903,-122.012794,1258,Broadway & Pine,1
+36.975063,-122.010559,1259,Broadway & Cayuga,0
+36.975346,-122.00885,1260,Broadway & Seabright Ave,4
+36.971954,-121.993874,1262,Brommer (Sorrento Oaks),0
+36.972103,-121.993774,1263,Brommer & Captains Ct,0
+36.971947,-121.989578,1265,Brommer & El Dorado Ave,0
+36.972061,-121.989075,1266,Brommer & El Dorado Ave,3
+36.971119,-121.985313,1267,Brommer & 17th Ave,1
+36.971306,-121.98539,1269,Brommer & 17th Ave,7
+36.981819,-121.952354,1285,Capitola Ave & Hill,1
+36.984486,-121.951752,1287,Capitola Ave & Gary,1
+36.979492,-121.992188,1288,Capitola Rd & 7th Ave,11
+36.97905,-121.991577,1289,Capitola Rd & 7th Ave,5
+36.977577,-121.988701,1290,Capitola Rd & El Dorado Ave,7
+36.977852,-121.988724,1291,Capitola Rd & Jose Ave,5
+36.975636,-121.982391,1293,Capitola Rd & 17th Ave,9
+36.975834,-121.981972,1294,Capitola Rd & 17th Ave (Live Oak Senior Ctr),19
+36.975285,-121.978172,1297,Capitola Rd & Woodrose Ave,3
+36.975441,-121.976852,1298,Capitola Rd & Maciel Ave,3
+36.973675,-121.974098,1299,Capitola Rd & 30th Ave,5
+36.973789,-121.972603,1300,Capitola Rd & 30th Ave,4
+36.973602,-121.970589,1301,Capitola Rd & Thompson Ave,0
+36.973602,-121.966553,1302,Capitola Rd & 41st Ave,0
+36.973621,-121.964485,1303,Capitola Rd & 41st Ave,2
+36.973843,-121.963669,1304,Capitola Rd & 41st Ave,0
+36.973618,-121.960815,1305,Capitola Rd & 44th Ave,2
+36.973843,-121.961472,1306,Capitola Rd & 43rd Ave,0
+36.973656,-121.958023,1307,Capitola Rd & 47th Ave,1
+36.974327,-121.910355,1312,Center Ave & East,4
+36.974442,-121.908646,1314,Center Ave & Santa Clara Ave,0
+36.974503,-121.907295,1315,Center Ave & El Camino Del Mar,0
+36.964104,-121.879417,1325,Clubhouse Dr & St Andrews Dr,0
+36.967808,-121.883453,1328,Clubhouse Dr & Locke Dr,0
+36.970222,-121.885704,1331,Clubhouse Dr & Los Altos Dr,0
+36.972874,-121.887932,1332,Clubhouse Dr & Murray Ave,0
+36.977638,-122.05368,1341,Bay & High (UCSC - Main Gate),127
+36.981369,-122.051926,1342,Coolidge Dr & Hagar Ct  (UCSC - Lower Campus),15
+36.984577,-122.032249,1344,Coral (Granite Rock),1
+36.985153,-122.03083,1345,Coral & River,2
+36.991112,-122.016518,1347,Emeline Complex,0
+36.954601,-122.062317,1349,Delaware Ave & Shaffer (De Anza),1
+36.954792,-122.057671,1350,Delaware Ave & Natural Bridges Dr,1
+36.955643,-122.048012,1351,Delaware Ave & Swift,5
+36.956249,-122.043053,1352,Delaware Ave & Almar Ave,7
+36.956711,-122.040794,1353,Delaware Ave & Surfside,2
+36.956913,-122.037956,1355,Delaware Ave & Woodrow Ave,0
+36.957111,-122.037643,1356,Delaware Ave & Woodrow Ave,11
+36.964195,-121.992393,1360,E Cliff Dr & 13th Ave,3
+36.963562,-121.990685,1363,E Cliff Dr (East Cliff Village),7
+36.963505,-121.991188,1364,E Cliff Dr & 15th Ave,0
+36.967808,-121.999176,1372,Eaton & 5th Ave,3
+36.985378,-122.018837,1379,Emeline Ave & Grant,0
+36.985912,-122.018623,1380,Emeline Ave & Avalon,0
+36.986755,-122.018532,1381,Emeline Ave & Button,0
+36.988178,-122.01828,1382,Emeline Ave & Belmont,6
+36.988522,-122.018066,1383,Emeline Ave & Fernside,0
+36.991154,-122.017738,1384,Emeline Ave & Sutphen,2
+36.982777,-122.062706,1385,Empire Grade (UCSC - Arboretum),6
+36.988293,-122.068787,1386,Empire Grade & Heller Dr,0
+37.005913,-122.07399,1387,Empire Grade (Waldorf School),0
+37.026981,-122.099411,1388,Empire Grade & Smith Grade Rd,1
+37.045361,-122.109467,1389,Empire Grade & Pineridge Rd,1
+37.0457,-122.109734,1390,Empire Grade & Pineridge Rd,0
+37.053997,-122.117096,1391,Empire Grade & McGivern Way,0
+37.057629,-122.122879,1392,Empire Grade & Felton Empire Rd,0
+37.057446,-122.122986,1393,Empire Grade & Felton Empire Rd,4
+37.064621,-122.123215,1395,Empire Grade & Wild Iris Ln,0
+37.066418,-122.122498,1396,Empire Grade & Feather Ln,0
+37.06813,-122.123344,1397,Empire Grade & Sunlit Ln,0
+37.073196,-122.129517,1398,Empire Grade & Granger Rd,0
+37.074287,-122.130234,1399,Empire Grade & Rustic Ln,0
+36.98671,-122.030769,1404,Encinal & River,0
+36.955929,-122.04528,1408,Delaware Ave & Fair Ave,9
+36.972557,-121.871498,1425,Freedom Blvd & Soquel Dr,6
+36.972919,-121.870911,1426,Freedom Blvd & Soquel Dr,1
+36.975254,-121.869881,1427,Freedom Blvd (Aptos High School),16
+36.975643,-121.869362,1428,Freedom Blvd (Aptos High School),22
+36.981274,-121.864647,1429,Freedom Blvd & Valencia Rd,1
+36.981598,-121.86425,1430,Freedom Blvd & Valencia Rd,0
+36.986607,-121.859665,1431,Freedom Blvd & McDonald Rd,0
+36.98629,-121.859947,1432,Freedom Blvd & McDonald Rd,0
+36.986561,-121.856277,1433,Freedom Blvd & Parkhurst Cir,5
+36.986397,-121.856224,1434,Freedom Blvd & Parkhurst Cir,0
+36.986664,-121.847649,1435,Freedom Blvd (#5620),0
+36.986568,-121.847328,1436,Freedom Blvd (#5620),2
+36.987724,-121.84227,1437,Freedom Blvd (#5310),0
+36.987881,-121.838165,1439,Freedom Blvd & Day Valley Rd,1
+36.987694,-121.837944,1440,Freedom Blvd & Day Valley Rd,0
+36.980305,-121.828217,1441,Freedom Blvd & La Vida Dr,0
+36.976585,-121.825348,1442,Freedom Blvd & Pleasant Valley Rd,1
+36.976177,-121.825211,1443,Freedom Blvd & Willow Heights,0
+36.970886,-121.819077,1444,Freedom Blvd & Eagle Ridge (Scott Park),6
+36.970436,-121.818985,1445,Freedom Blvd & White Rd (Scott Park),1
+36.964157,-121.809837,1446,Freedom Blvd & Corralitos Rd,26
+36.963253,-121.809448,1447,Freedom Blvd & Corralitos Rd,2
+36.960724,-121.806229,1448,Freedom Blvd (Manns Apples),5
+36.960606,-121.806358,1449,Freedom Blvd (Manns Apples),0
+36.947906,-121.790741,1450,Freedom Blvd (Rider Apples),4
+36.948822,-121.792099,1451,Freedom Blvd (Rider Apples),0
+36.946781,-121.789612,1452,Freedom Blvd (Filipino Community Center),2
+36.946686,-121.789742,1453,Freedom Blvd (Filipino Community Center),0
+36.976315,-122.025482,1457,River & Front,3
+37.074276,-122.08252,1458,Glen Arbor Rd & Hermosa Ave,1
+37.074192,-122.082664,1459,Glen Arbor Rd & Hermosa Ave,0
+37.075436,-122.080383,1460,Glen Arbor Rd & Azalea Ave,0
+37.075413,-122.080284,1461,Glen Arbor Rd & Azalea Ave,0
+37.088444,-122.084755,1462,Glen Arbor Rd & Pine,0
+37.078968,-122.077835,1463,Glen Arbor Rd & Quail Hollow Rd,0
+37.081215,-122.077965,1465,Glen Arbor Rd & River,0
+37.083786,-122.081886,1466,Glen Arbor Rd & Madrone Ave,4
+37.08408,-122.082275,1467,Glen Arbor Rd & Madrone Ave,0
+37.085506,-122.083244,1468,Glen Arbor Rd & Hillcrest Ave,0
+37.086823,-122.08387,1470,Glen Arbor Rd & Locust,0
+37.078354,-122.079124,1471,Glen Arbor Rd & Hihn Rd,1
+37.078114,-122.079514,1472,Glen Arbor Rd & Hihn Rd,0
+37.088734,-122.087883,1474,Glen Arbor Rd & Riverside Ave,6
+37.052555,-122.072395,1492,Graham Hill Rd & Covered Bridge Rd N,28
+36.985538,-122.021599,1499,Grant (Grant Park),0
+36.991314,-122.054665,1501,Hagar Dr (UCSC - East Remote Parking),189
+36.989944,-122.0672,1505,Heller Dr (UCSC - Oakes College),87
+36.999287,-122.064552,1509,Heller Dr & McLaughlin Dr (UCSC - Kresge College),26
+36.978645,-122.057823,1510,High & Western Dr,9
+36.977596,-122.048607,1512,High & Moore,0
+36.977859,-122.048325,1513,High & Moore,18
+36.977737,-122.042374,1515,High & Laurent,10
+36.977901,-122.033669,1516,High & Highland,46
+36.976994,-122.032921,1517,Highland Ave & Escalona Dr,36
+37.010872,-122.194145,1520,Hwy 1 & Davenport Ave (Cash Store),4
+36.982559,-122.143456,1521,Hwy 1 & Coast Rd,1
+37.05563,-122.075081,1527,Hwy 9 (#6519),1
+37.058273,-122.077408,1529,Hwy 9 (Viking Cottages),2
+37.06131,-122.080154,1530,Hwy 9 (SLV High School),25
+37.061214,-122.080193,1531,Hwy 9 (SLV High School),17
+37.065662,-122.079758,1532,Hwy 9 & El Solyo Heights Dr,5
+37.066677,-122.079704,1533,Hwy 9 & El Solyo Heights Dr,0
+37.069176,-122.083977,1534,Hwy 9 & Glen Lomond Ln,1
+37.071644,-122.084068,1535,Hwy 9 & Sunnycroft Rd,0
+37.079185,-122.083565,1536,Hwy 9 (Highlands Park),0
+37.079517,-122.083397,1537,Hwy 9 (Highlands Park),4
+37.080986,-122.084381,1538,Hwy 9 & Park Way,3
+37.081261,-122.084435,1539,Hwy 9 & Shadowbrook Rd,5
+37.087681,-122.08873,1541,Hwy 9 & Hillside Ave,5
+37.087646,-122.088585,1542,Hwy 9 & Hillside Ave,0
+37.089657,-122.089676,1543,Hwy 9 & Main,18
+37.089844,-122.089813,1544,Hwy 9 & Main,2
+37.09296,-122.09626,1547,Hwy 9 & Brown Gables Rd,0
+37.09573,-122.09742,1548,Hwy 9 & California Dr,1
+37.09549,-122.097122,1549,Hwy 9 & California Dr,1
+37.099701,-122.100967,1550,Hwy 9 & Pike Rd,0
+37.105839,-122.105988,1552,Hwy 9 & Western Ave,2
+37.106651,-122.10656,1553,Hwy 9 & Larkspur,0
+37.107697,-122.109261,1554,Hwy 9 & Clear Creek Rd,10
+37.107861,-122.109627,1555,Hwy 9 & Pacific,3
+37.111294,-122.11441,1556,Hwy 9 & Irwin Way,3
+37.111439,-122.11422,1557,Hwy 9 & Irwin Way,0
+37.116161,-122.120453,1558,Hwy 9 & River,4
+37.116524,-122.120216,1559,Hwy 9 & River,0
+37.120399,-122.120834,1560,Hwy 9 & Mountain,0
+37.123093,-122.121696,1561,Hwy 9 & Lomond,21
+37.133812,-122.125984,1564,Hwy 9 & Monaco Ln,0
+37.138687,-122.129517,1565,Hwy 9 & Cresta Dr,3
+37.152439,-122.134529,1567,Hwy 9 & Sequoia Rd,7
+37.185116,-122.141586,1568,Hwy 9 & Ramona Dr,0
+37.195713,-122.145607,1569,Hwy 9 & Sylvan Ave,2
+36.999294,-122.020912,1570,Hwy 17 & Pasatiempo Dr,5
+36.999645,-122.022064,1571,Hwy 17 & Pasatiempo Dr,4
+36.963802,-122.000298,1585,5th Ave (Harbormaster),0
+36.966976,-122.001083,1586,Lake Ave & Lago Ln,2
+36.968449,-122.031158,1590,Laurel & Blackburn,3
+36.968918,-122.02774,1591,Laurel & Center,302
+36.999973,-122.062332,1615,McLaughlin Dr (UCSC - Science Hill),235
+36.999924,-122.058319,1616,McLaughlin Dr (UCSC - College 9 & 10 / Health Ctr),284
+36.999008,-122.055176,1617,McLaughlin Dr (UCSC - Crown & Merrill College),241
+36.962132,-122.044601,1619,Mission & Miramar Dr (Almar Shopping Ctr),21
+36.962399,-122.044502,1620,Mission & Miramar Dr (Almar Shopping Ctr),91
+36.965111,-122.041534,1623,Mission & Palm (Palm Center),6
+36.965073,-122.041832,1624,Mission & Olive,61
+36.967289,-122.039131,1625,Mission & Trescony,12
+36.96917,-122.037437,1629,Mission & Laurel,0
+36.969028,-122.037788,1630,Mission & Laurel,91
+36.970787,-122.036392,1631,Mission & Rigg,0
+36.970921,-122.036552,1633,Mission & Otis,0
+36.977268,-122.030281,1638,Mission & Sylvar,0
+37.055664,-122.061325,1647,Mt Hermon Rd & Covenant Ln,0
+37.053524,-122.039589,1648,Mt Hermon Rd & Conference Dr,3
+37.054188,-122.039986,1649,Mt Hermon Rd & Conference Dr,1
+37.04977,-122.036583,1650,Mt Hermon Rd & Quarry Rd,1
+37.050823,-122.037148,1651,Mt Hermon Rd & Lockhart Gulch Rd,0
+37.04565,-122.027496,1652,Mt Hermon Rd & Kings Village Rd,2
+37.044693,-122.026665,1653,Mt Hermon Rd (Graham Plaza),11
+37.042404,-122.024902,1654,Mt Hermon Rd & Whispering Pines Dr,0
+36.967262,-122.007477,1658,Murray & Seabright Ave,1
+36.979939,-122.02124,1664,Ocean & Water,37
+36.980957,-122.02198,1665,Ocean & Blaine,0
+36.98243,-122.022217,1666,Ocean & Hubbard,11
+36.983929,-122.023132,1667,Ocean & Franklin,12
+37.078445,-122.133873,1671,Pine Flat Rd & Empire Grade,5
+37.078674,-122.133743,1672,Pine Flat Rd & Empire Grade,0
+36.985016,-122.023018,1677,Plymouth & Ocean,1
+37.15493,-122.133217,1678,Pool Dr & Hwy 9 (Mountain Store),5
+36.962605,-121.987198,1681,Portola Dr & 18th Ave,5
+36.962486,-121.983597,1682,Portola Dr & Clearwater Ct,5
+36.962254,-121.984566,1683,Portola Dr & 21st Ave,3
+36.962967,-121.980385,1685,Portola Dr & 24th Ave (Live Oak Library),7
+36.963348,-121.974937,1686,Portola Dr & 26th Ave (Trailer Haven),5
+36.963566,-121.973892,1687,Portola Dr & 30th Ave,7
+36.963345,-121.972389,1688,Portola Dr & 30th Ave,3
+36.963554,-121.971924,1690,Portola Dr & 35th Ave,5
+36.963535,-121.968834,1692,Portola Dr & 37th Ave,5
+36.963318,-121.968773,1693,Portola Dr & 37th Ave,2
+36.968151,-121.901215,1703,Rio Del Mar Blvd & Kingsbury Dr,0
+36.96909,-121.899513,1705,Rio Del Mar Blvd & Highland Dr,0
+36.970234,-121.898155,1707,Rio Del Mar Blvd & Martin Dr,0
+36.97105,-121.896011,1708,Rio Del Mar Blvd & Sumner Ave,0
+36.971233,-121.891838,1710,Rio Del Mar Blvd & Palmer Ave,3
+36.973217,-121.888908,1712,Rio Del Mar Blvd & Clubhouse Dr,2
+36.976425,-122.025192,1713,River (River/Front Garage),20
+36.97921,-122.027489,1714,River & N Pacific Ave,0
+36.981705,-122.02919,1715,River & Josephine,0
+36.988747,-122.030769,1717,River & Golf Club Dr (City Corp. Yard),1
+37.044632,-122.023293,1731,Scotts Valley Dr & Bean Creek Rd (Middle School),1
+37.045773,-122.021118,1733,Scotts Valley Dr & Blake Lane,0
+37.048088,-122.017265,1734,Scotts Valley Dr & Civic Center Dr,3
+37.048546,-122.016434,1735,Scotts Valley Dr & Disc Dr,4
+37.052338,-122.013596,1738,Scotts Valley Dr & Dunslee Way,2
+37.052372,-122.013931,1739,Scotts Valley Dr & Dunslee Way,0
+37.055168,-122.012421,1740,Scotts Valley Dr & Frapwell Cir,0
+37.058823,-122.010323,1741,Scotts Valley Dr & Victor Square,0
+37.057503,-122.010796,1742,Scotts Valley Dr & Willis Rd,0
+37.06012,-122.009262,1743,Scotts Valley Dr (#5437 Executive Center),0
+37.059498,-122.009407,1744,Scotts Valley Dr & Victor Square,4
+37.06155,-122.007301,1745,Scotts Valley Dr & Granite Creek Rd,7
+37.046673,-122.019424,1748,Scotts Valley Dr & Terrace View Dr,0
+37.046619,-122.018944,1749,Scotts Valley Dr & Oak Creek Blvd,1
+36.967537,-122.007759,1750,Seabright Ave & Murray,6
+36.968437,-122.008018,1751,Seabright Ave & Logan,0
+36.968861,-122.007881,1752,Seabright Ave & Hall,4
+36.9715,-122.00798,1754,Seabright Ave & Clinton,1
+36.971386,-122.008125,1755,Seabright Ave & Clinton,0
+36.973316,-122.008095,1756,Seabright Ave & Windham,0
+36.974281,-122.00808,1757,Seabright Ave & Windsor,0
+36.974442,-122.008301,1758,Seabright Ave & Windsor,2
+36.952278,-121.873009,1775,Seascape Blvd & Vineyard Ct,0
+36.951683,-121.869675,1777,Seascape Blvd & Dolphin Dr,0
+36.973946,-122.020645,1781,Soquel Ave & Riverside Ave,5
+36.974438,-122.019623,1782,Soquel Ave & Ocean,1
+36.974598,-122.018517,1783,Soquel Ave & Ocean,23
+36.976292,-122.017044,1784,Soquel Ave & Ocean View Dr (Branciforte Plaza),2
+36.977913,-122.014389,1788,Soquel Ave & Pine,1
+36.979103,-122.012108,1790,Soquel Ave & Benito Ave,3
+36.978886,-122.012062,1791,Soquel Ave & Cayuga,2
+36.979675,-122.01107,1792,Soquel Ave & Seabright Ave,2
+36.98008,-122.00975,1793,Soquel Ave & Seabright Ave,8
+36.980846,-122.008446,1794,Soquel Ave & Poplar Ave,11
+36.981407,-122.00415,1795,Soquel Ave & Frederick,29
+36.981586,-122.003937,1796,Soquel Ave & San Juan Ave,11
+36.981316,-122.00206,1797,Soquel Ave & Hagemann Ave,10
+36.981537,-122.001526,1798,Soquel Ave & Trevethan Ave,6
+36.981796,-121.998512,1799,Soquel Ave & Park Way,6
+36.981575,-121.998894,1800,Soquel Ave & Park Way,11
+36.983223,-121.995224,1801,Soquel Ave & La Fonda Ave,10
+36.982986,-121.995026,1802,Soquel Ave & La Fonda Ave,8
+36.985233,-121.990616,1803,Soquel Ave & 7th Ave,7
+36.985344,-121.989456,1804,Soquel Ave & 7th Ave,12
+36.988644,-121.983345,1805,Soquel Dr (Dominican Hospital),4
+36.988667,-121.982544,1806,Soquel Dr (Dominican Hospital),12
+36.989185,-121.98101,1807,Soquel Dr & Mission Dr,28
+36.988941,-121.980423,1808,Soquel Dr & Mission Dr,1
+36.988811,-121.978905,1809,Soquel Dr & Thurber Ln,11
+36.988235,-121.974579,1810,Soquel Dr & Winkle Ave,18
+36.988003,-121.974335,1811,Soquel Dr & Winkle Ave,3
+36.987942,-121.971016,1813,Soquel Dr & Dover Dr,5
+36.987434,-121.968498,1814,Soquel Dr & Rodeo Gulch Rd,7
+36.987656,-121.963936,1817,Soquel Dr & 41st Ave,12
+36.987473,-121.964043,1818,Soquel Dr & 41st Ave,15
+36.98764,-121.958481,1820,Soquel Dr & Daubenbiss Ave,19
+36.987831,-121.958763,1821,Soquel Dr & Daubenbiss Ave,30
+36.98893,-121.954857,1822,Soquel Dr & Main,1
+36.988735,-121.954994,1823,Soquel Dr & Main,3
+36.987358,-121.952431,1824,Soquel Dr & E Walnut,24
+36.987072,-121.950851,1825,Soquel Dr & Capitola Ave,2
+36.987335,-121.950958,1826,Soquel Dr & Capitola Ave,5
+36.987637,-121.948311,1827,Soquel Dr & Browns Ln,3
+36.987556,-121.94709,1828,Soquel Dr & Orchard,0
+36.987823,-121.946442,1829,Soquel Dr & Fairway Dr,2
+36.987709,-121.944557,1830,Soquel Dr & Silver Birch Ln,1
+36.987965,-121.943474,1831,Soquel Dr & Cunnison Ln,3
+36.987701,-121.940834,1832,Soquel Dr & Monterey Ave,0
+36.988136,-121.93811,1833,Soquel Dr & Maplethorpe Ln,4
+36.988773,-121.936668,1834,Soquel Dr & Park Ave,8
+36.98864,-121.936417,1835,Soquel Dr & Park Ave,11
+36.990021,-121.93235,1836,Soquel Dr & Willowbrook Ln,3
+36.990124,-121.932785,1837,Soquel Dr & Merrill Rd,1
+36.990547,-121.929962,1838,Soquel Dr & Porter Gulch Rd,6
+36.988716,-121.925934,1839,Soquel Dr & Cabrillo College Dr,80
+36.988106,-121.924599,1840,Soquel Dr & Cabrillo College Dr,37
+36.987057,-121.920822,1841,Soquel Dr & Borregas Dr,0
+36.985977,-121.918098,1842,Soquel Dr & Calabria,1
+36.986355,-121.919319,1843,Soquel Dr & Vienna Dr (Mar Vista Elem),1
+36.984833,-121.915833,1844,Soquel Dr & Mar Vista Dr,2
+36.984703,-121.916023,1845,Soquel Dr & Mar Vista Dr,0
+36.98251,-121.911064,1846,Soquel Dr & W Ledyard Way,0
+36.981739,-121.910255,1847,Soquel Dr & W Ledyard Way,0
+36.980453,-121.908997,1848,Soquel Dr & State Park Dr,3
+36.980858,-121.908981,1849,Soquel Dr & E Ledyard Way (Aptos Library),21
+36.978474,-121.907341,1850,Soquel Dr (Rancho Del Mar Center),2
+36.979733,-121.908195,1851,Soquel Dr & State Park Dr,13
+36.976662,-121.899879,1852,Soquel Dr & Trout Gulch Rd,4
+36.976547,-121.900009,1853,Soquel Dr & Trout Gulch Rd,2
+36.975746,-121.889977,1854,Soquel Dr (Creekside Offices),0
+36.975594,-121.890137,1855,Soquel Dr (Creekside Offices),1
+36.975849,-121.884499,1856,Soquel Dr & Monroe Ave,5
+36.975323,-121.884949,1857,Soquel Dr (Aptos Gateway),13
+36.973389,-121.880272,1858,Soquel Dr & Jaunell Rd,2
+36.971237,-121.873734,1859,Soquel Dr & Monroe Ave (Auto Center),0
+36.975044,-121.912033,1861,State Park Dr & Hillcrest Dr,1
+36.972946,-121.952324,1862,Stockton Ave & Esplanade,0
+36.972805,-121.95224,1863,Stockton Ave & Esplanade,2
+36.953926,-121.879311,1865,Sumner Ave & Dolphin Dr,0
+36.95694,-121.882614,1867,Sumner & Seabreeze/Clubhouse,0
+36.971302,-121.903809,1875,Treasure Island Dr & Winfield Way,1
+36.972141,-122.033958,1883,Walnut Ave & California,10
+36.971966,-122.033852,1884,Walnut & California,0
+36.972759,-122.030441,1885,Walnut Ave & Chestnut,0
+36.972527,-122.030815,1886,Walnut Ave & Chestnut,0
+36.973164,-122.028252,1887,Walnut Ave & Center,1
+36.978519,-122.023933,1892,Water (Governmental Center),23
+36.979584,-122.020844,1893,Water & Ocean,39
+36.979523,-122.021805,1894,Water & Ocean,5
+36.980312,-122.019409,1895,Water & Market,7
+36.980072,-122.019371,1896,Water & Market,2
+36.981499,-122.014587,1899,Water & N Branciforte Ave,8
+36.981369,-122.012978,1900,Water & N Branciforte Ave,7
+36.98148,-122.010902,1901,Water & Seabright Ave,2
+36.981461,-122.00853,1903,Water & Poplar,15
+36.964211,-122.056625,1907,Western Dr & Flower,94
+36.970291,-122.058418,1909,Western Dr & Monarch Way,0
+36.973766,-122.05835,1910,Western Dr & Meder,5
+36.964241,-121.998367,1914,7th Ave & Bonnie,10
+36.96629,-121.998093,1915,7th Ave & Dolores,0
+36.973236,-121.995453,1916,7th Ave & Harbor Cove,2
+36.974007,-121.994766,1917,7th Ave & Manor Way (Yacht Harbor Manor),7
+36.976334,-121.993401,1919,7th Ave & Eddy Ln (Inland Harbor),0
+36.976723,-121.993439,1921,7th Ave & Cambria Ln,0
+36.978916,-121.992165,1922,7th Ave & Capitola Rd,0
+37.141563,-122.090965,1986,Bear Creek Rd & Deerwood Dr,0
+37.011837,-122.195023,1987,Ocean (Pacific School),6
+36.926765,-121.764267,1989,Crestview Dr & Freedom Blvd (Crestview Shopping),1
+36.920963,-121.759163,1992,Lincoln & Stanford,0
+36.918415,-121.756775,1993,Lincoln & California,1
+36.916187,-121.754837,1994,Lincoln & E 5th,1
+36.961304,-121.878349,1995,Clubhouse Dr & Pinehurst Dr,1
+36.971603,-121.875214,2007,Soquel Dr & Monroe Ave (Auto Center),2
+36.967911,-122.042747,2056,Bay & King,7
+36.956619,-122.040222,2061,Delaware Ave & Bethany Curve,2
+36.977467,-122.030075,2085,Mission & Sylvar,32
+36.977577,-122.042175,2086,High & Laurent,0
+36.977375,-122.050362,2090,High & Cardiff,1
+36.977268,-122.050232,2091,High & Cardiff,3
+36.96101,-122.057297,2095,Hwy 1 & Western Dr,1
+36.994263,-122.055511,2101,Hagar Dr (UCSC - East Field House),70
+36.997498,-122.055061,2102,"Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",487
+36.985661,-122.021584,2114,Grant (Grant Park),2
+37.120377,-122.120956,2124,Hwy 9 & Mountain,4
+37.071594,-122.084244,2125,Hwy 9 & Willowbrook Dr,4
+37.081112,-122.077751,2127,Glen Arbor Rd & River,0
+37.092968,-122.096474,2128,Hwy 9 & Brown Gables Rd,4
+37.054691,-122.160866,2132,Bonny Doon Rd & Thayer Rd,1
+37.003265,-122.073166,2133,Empire Grade (UCSC path),2
+37.027748,-122.099716,2134,Empire Grade & Smith Grade,0
+37.041912,-122.150681,2135,Bonny Doon Rd & Pine Flat Rd,1
+37.061775,-122.148544,2136,Pine Flat Rd (Bonny Doon Elementary),1
+37.06728,-122.141121,2137,Pine Flat Rd & Kelly Ln,1
+37.079155,-122.138542,2138,Pine Flat Rd & Atherley Ln,0
+37.080856,-122.141106,2139,Pine Flat Rd & Comstock Ln,0
+37.081173,-122.140335,2140,Pine Flat Rd & Comstock Ln,0
+37.069073,-122.142029,2141,Pine Flat Rd (#2175),0
+37.064308,-122.145187,2142,Pine Flat Rd & Bonny Doon Rd,0
+36.96545,-121.964783,2143,41st Ave & Bain Ave,0
+36.974438,-121.96479,2144,41st Ave & Capitola Rd,1
+36.969898,-121.965034,2145,41st Ave & Brommer,2
+36.979519,-121.96476,2148,41st Ave & Clares,11
+36.984924,-121.964783,2149,41st Ave (Home Depot),2
+36.980217,-121.965096,2151,41st Ave & Gross Rd,3
+36.985123,-121.96505,2152,41st Ave & Cordelia Ln,1
+36.964314,-121.967354,2158,38th Ave & Avis Ln,1
+36.965317,-121.967468,2159,38th Ave & Tranquility Ct,2
+36.966049,-121.967293,2160,38th Ave & Roland,0
+36.967449,-121.967453,2161,38th Ave (Castle Mobile Estate),5
+36.967766,-121.967308,2162,38th Ave (Capitola Manor),0
+36.968742,-121.967445,2163,38th Ave (Blue & Gold),6
+36.969456,-121.967316,2164,38th Ave & Reposa (Blue & Gold),1
+36.972103,-121.967323,2166,38th Ave (King's Plaza),0
+36.971706,-121.965065,2167,41st Ave (King's Plaza),11
+36.970665,-121.984764,2170,17th Ave & Brommer,0
+36.967159,-121.985489,2171,17th Ave & Felt,1
+36.964989,-121.98674,2172,17th Ave & Merrill,3
+36.963676,-121.987267,2173,17th Ave & Matthews Ln,1
+36.965302,-121.98632,2174,17th Ave & Merrill,21
+36.967182,-121.985222,2175,17th Ave & Felt,6
+36.962898,-121.981438,2177,Portola Dr & Corcoran Ave,5
+36.969753,-121.98481,2178,17th Ave & Kinsley,3
+36.98085,-122.008003,2186,Soquel Ave & Darwin,5
+36.911495,-121.758659,2191,W Lake Ave & Main,1
+36.91433,-121.764458,2192,Rodriguez & Main (The Pines Apts),14
+36.953503,-121.77771,2195,Amesti Rd & Paraiso Dr,0
+36.959873,-121.78717,2196,Amesti Rd & E Rianda Rd,0
+36.961891,-121.790154,2197,Amesti Rd & Alaga Ln,0
+36.971062,-121.794975,2198,Amesti Rd & Pioneer Rd,1
+36.971138,-121.795738,2199,Varni Rd & Amesti Rd,0
+36.914402,-121.764648,2204,Rodriguez & Main (The Pines Apts),1
+36.911034,-121.761307,2205,Rodriguez & Kearney,1
+36.941654,-121.784241,2208,Buena Vista Dr & Miller Ave,0
+36.925873,-121.790672,2209,Anna & Hanger Way,0
+36.929199,-121.769669,2211,Clifford Ave & Evelyn Ave,2
+36.923138,-121.784691,2212,Herman Ave & Kralj Dr,0
+36.925499,-121.785263,2214,Anna & Herman Ave,0
+36.925472,-121.779732,2220,S Green Valley Rd & Marantha Dr,0
+36.936756,-121.775597,2224,Freedom Blvd & Roache Rd,0
+36.954182,-121.764832,2225,Green Valley Rd & Celia Dr,0
+36.96524,-121.765091,2226,Green Valley Rd & Poultry Ln (Mesa Village),12
+36.957767,-121.765015,2227,Green Valley Rd & Trembly Ln,4
+36.948059,-121.765633,2228,Green Valley Rd & Behler Rd (Pinto Lake Pk),3
+36.933743,-121.735931,2233,College Rd & Taylor Rd (Drew Lake),0
+36.929527,-121.744766,2234,E Lake & Nugent Ave,2
+36.921513,-121.740303,2235,Tuttle Ave & Bridge,0
+36.985703,-122.024223,2242,Ocean & Felker,0
+36.974503,-121.905243,2244,Center Ave & Sea Terrace Way,0
+36.969402,-121.765289,2259,Green Valley Rd & Mesa Verde Dr,0
+36.972771,-121.764694,2260,Wheelock Rd & Casserly Rd,1
+36.976376,-121.766792,2261,Wheelock Rd (#102),0
+36.979382,-121.766594,2262,Wheelock Rd & Gilchrist Ln,2
+36.981682,-121.768921,2263,Wheelock Rd (Monte Vista School),0
+36.980419,-121.776428,2264,Wheelock Rd & Green Valley Rd,4
+36.970734,-121.770912,2265,Green Valley Rd & Kliewer Ln,1
+36.975204,-122.010735,2270,Broadway & Cayuga,0
+36.974762,-122.014656,2271,Broadway & S Branciforte Ave,5
+36.974663,-122.014534,2272,Broadway & S Branciforte Ave,0
+36.952087,-121.876511,2280,Seascape Blvd & Sumner Ave,3
+37.047249,-122.031448,2286,Mt Hermon Rd (King's Village Shopping Ctr),7
+37.088829,-122.08828,2288,Glen Arbor Rd & Hwy 9,0
+36.963669,-122.035782,2291,Bay & California,19
+37.086674,-122.083931,2294,Glen Arbor Rd & Locust,0
+36.972095,-121.990547,2296,Brommer & Odyssey Ct,0
+36.915394,-121.763992,2297,Main & Rodriguez,2
+36.972977,-122.028458,2301,Walnut Ave & Center,0
+36.97617,-122.028,2302,Cedar & Center,22
+36.971596,-122.026779,2303,Cedar & Cathcart,12
+36.973537,-122.027122,2304,Cedar & Walnut Ave,11
+36.97224,-122.02713,2308,Cedar & Lincoln,0
+37.01162,-122.075348,2310,Empire Grade (#2519),0
+36.983685,-122.064934,2328,Empire Grade (UCSC - Arboretum),1
+36.9557,-122.049004,2330,Delaware Ave & Swift,0
+36.964554,-121.762573,2334,Mark Ave & Arroyo Dr,1
+36.966805,-121.763443,2335,Mark Ave & Hathaway Ave,4
+36.968338,-121.763596,2336,Mark Ave & Ponderosa Ave,3
+36.977043,-121.986664,2340,Capitola Rd & Foster Ct,3
+36.976334,-121.984383,2341,Capitola Rd & 16th Ave,1
+36.961262,-122.047745,2342,Mission & King,44
+36.961472,-122.056572,2344,Western Dr & Beachview Ave,101
+36.984573,-122.038414,2350,Harvey West Blvd (Harvey West Park),1
+36.982899,-121.989479,2352,7th Ave (Casa La Familia),0
+37.151428,-122.136292,2354,Hwy 9 & Pleasant Way,7
+36.968674,-121.96476,2356,41st Ave (Begonia Plaza),0
+36.976871,-121.776306,2363,Green Valley Rd & Litchfield Ln,0
+36.973518,-122.02478,2364,Front & Soquel Ave,0
+36.973495,-122.024193,2365,Soquel Ave & Front,1
+36.988365,-121.977539,2367,Soquel Dr & Chanticleer Ave,6
+37.047615,-122.032249,2371,Mt Hermon Rd (Scotts Valley Square),14
+37.056007,-122.011597,2372,Scotts Valley Dr & El Pueblo Rd,3
+37.050331,-122.153351,2373,Pine Flat Rd & Quail Dr,0
+36.978813,-122.057732,2374,High & Western,3
+36.977322,-122.054306,2375,High & Bay Dr (UCSC - Main Gate),30
+36.976765,-122.053802,2376,Bay Dr & High,18
+36.973824,-121.969948,2377,Capitola Rd & Clares,10
+36.92403,-121.780922,2381,S Green Valley Rd & Magnolia Dr,0
+36.922298,-121.781578,2382,S Green Valley Rd & Kralj Dr,2
+36.987644,-121.985512,2383,Soquel Dr & Paul Sweet Rd,1
+37.184177,-122.140999,2384,Hwy 9 & Quigg Way,0
+36.968609,-122.058342,2393,Western Dr & Western Ct,16
+36.976192,-122.035034,2394,Storey & Escalona Dr,1
+36.981163,-122.029144,2396,River & Josephine,1
+37.173401,-122.138138,2400,Hwy 9 & Teihl,0
+37.172913,-122.138367,2401,Hwy 9 & Teihl,0
+36.940006,-121.77681,2407,Airport Blvd (Freedom Centre),32
+36.954845,-121.798737,2409,Freedom Blvd (#2672),6
+36.954887,-121.798973,2410,Freedom Blvd (#2672),0
+36.934345,-121.774185,2413,S Green Valley Rd & Carey Ave,1
+36.92791,-121.778648,2414,S Green Valley Rd & Hope Dr (Green Valley Village),5
+36.914864,-121.754097,2415,E Lake & Lincoln St,0
+36.929684,-121.785355,2416,Sunnyhills Dr & Shady Oaks Dr,0
+36.95599,-122.04586,2420,Delaware Ave & Fair,5
+36.985214,-122.039513,2426,Dubois & Harvey West Blvd,5
+37.065884,-122.157814,2429,Bonny Doon Rd (Mc Henry Vineyard),0
+36.941628,-121.768974,2433,Green Valley Rd & Holohan Rd,1
+36.941536,-121.769325,2434,Green Valley Rd & Airport Blvd,0
+36.944111,-121.767555,2436,Green Valley Rd (Hispanic SDA Church),0
+37.06847,-122.123299,2437,Empire Grade & Sunlit Ln,0
+37.142315,-122.131683,2440,Hwy 9 & Brookside Dr,0
+37.153336,-122.161102,2445,Big Basin Way (Country Club),0
+36.992996,-122.065201,2448,Heller Dr (UCSC - Rachel Carson College & Porter),241
+36.953758,-121.764999,2453,Green Valley Rd & Devon Ln,4
+36.971462,-121.964745,2456,41st Ave (Four Star Center),0
+36.95047,-121.86602,2464,Seascape Blvd & Via Pacifica,0
+36.920879,-121.761032,2465,Freedom Blvd & Portola Cir,1
+36.922642,-121.761673,2466,Freedom Blvd & Miles Ln,0
+36.918648,-121.760216,2467,Freedom Blvd & W High,0
+36.912842,-121.759621,2469,Main & W 5th,0
+36.92189,-121.782135,2470,S Green Valley Rd & Kralj Dr,1
+36.92775,-121.771591,2471,Clifford Ave & Crescent Dr,0
+36.920925,-121.775604,2472,Clifford Ave & Montebello Dr,0
+36.92638,-121.762161,2477,Madison & Crestview Dr (Crestview Garden),2
+36.92115,-121.775589,2479,Clifford Ave & Rosewood Dr,7
+36.928196,-121.793587,2480,Neilson & Airport Blvd (Wats. Hospital),6
+36.925709,-121.787025,2481,Anna & Holm Rd,0
+36.916607,-121.755005,2482,Lincoln & E 5th,14
+36.917816,-121.756042,2483,Lincoln & Palm Ave,3
+36.9202,-121.758316,2484,Lincoln & E High,12
+36.937199,-121.778809,2486,Airport Blvd & Freedom,4
+36.932194,-121.785233,2487,Ross Ave & Chappell Rd,0
+36.931,-121.784027,2488,Ross Ave & Holly Dr,7
+36.927246,-121.785522,2489,Shady Oaks Dr & Jeanette Way,0
+36.933826,-121.780457,2490,Loma Prieta Ave & Cherry Blossom Dr,2
+36.931335,-121.778366,2491,Loma Prieta Ave & Holly Dr,1
+36.977066,-122.052864,2497,High & Bay,2
+37.142136,-122.131935,2505,Hwy 9 & Brimblecom Rd,9
+37.021255,-122.084198,2507,Empire Grade (at Mile 1306),0
+37.072632,-122.127945,2508,Empire Grade (Bonny Doon Airport),0
+37.047409,-122.157059,2509,Bonny Doon Rd & Cathedral Park Dr,0
+37.070213,-122.142715,2510,Pine Flat Rd (#2300),0
+37.07386,-122.143135,2511,Pine Flat Rd (#2572),0
+37.077599,-122.142075,2512,Pine Flat Rd (#2878),0
+37.125935,-122.122597,2514,Hwy 9 & Middleton Ave (Big Basin),14
+37.125984,-122.122391,2515,Hwy 9 & Middleton Ave (Big Basin),4
+36.991791,-122.066803,2516,Heller Dr (UCSC - Family Student Housing),10
+37.061939,-122.007164,2519,Scotts Valley Dr & Granite Creek Rd,13
+36.981766,-121.954742,2520,Hill & Crossroads Loop,0
+36.986652,-122.0187,2522,Emeline Ave & Button,0
+36.964031,-121.987328,2551,17th Ave & Tremont Dr,0
+36.91758,-121.784393,2552,S Green Valley Rd & Main,2
+36.92627,-121.745789,2554,E Lake & Wagner Ave,0
+37.052711,-122.072281,2559,Graham Hill Rd & Hwy 9 (Covered Bridge),16
+36.923885,-121.762436,2567,Freedom Blvd & Marin,2
+36.957733,-122.043022,2569,Almar & Hebard (Park),5
+36.961449,-122.043594,2570,Almar & Rankin,5
+36.968651,-122.028992,2572,Laurel & Chestnut,0
+36.919975,-121.741875,2573,E Bronte Ave & Bridge,0
+36.98373,-121.913445,2575,Soquel Dr & Terrace Dr,1
+36.968792,-121.765099,2576,Green Valley Rd & Mesa Verde Dr,2
+36.961372,-122.025848,2582,Bay & West Cliff,26
+36.960594,-122.029099,2583,Bay & Laguna,12
+36.961437,-122.03244,2584,Bay & National,35
+36.961361,-122.032578,2585,Bay & National,1
+36.9604,-122.029274,2586,Bay & Laguna,0
+36.961231,-122.025948,2587,Bay & West Cliff,1
+36.963673,-122.024895,2592,Pacific Ave & Viaduct Ln,63
+36.963909,-122.024918,2593,Pacific Ave & 2nd,2
+36.933441,-121.771286,2594,Freedom Blvd (K-Mart),5
+36.956799,-121.800774,2596,Freedom Blvd (#2716),25
+36.97382,-121.955978,2599,Capitola Rd & 49th Ave,0
+37.133682,-122.126236,2600,Hwy 9 & Monaco Ln,1
+36.992943,-122.017601,2603,Emeline Ave (Emeline Complex - Building K),1
+36.978935,-122.02124,2605,Ocean & Water (Governmental Center),0
+36.962772,-121.987114,2617,Portola Dr & 18th Ave,5
+37.000938,-122.180626,2618,Hwy 1 & Bonny Doon Rd,0
+36.960636,-122.048813,2619,Mission & Swift,11
+36.982883,-121.912354,2620,Soquel Dr & Heather Terrace,0
+36.928905,-121.790894,2622,Hanger Way & Neilson,0
+36.92836,-121.793121,2623,Neilson & Airport Blvd (Wats. Hospital),3
+37.049004,-122.02774,2624,Cavallaro Transit Center (Scotts Valley),42
+36.976376,-122.026566,2627,Front & Pacific Ave,0
+36.918819,-121.776115,2628,Clifford Ave & Sherwood Ct,0
+36.918736,-121.775993,2629,Clifford Ave & Montebello Dr,0
+36.931435,-121.788322,2630,Airport Blvd & Holm Rd,5
+37.044392,-122.023148,2632,Scotts Valley Dr & Bean Creek Rd,7
+37.056862,-122.011497,2633,Scotts Valley Dr & Johnston Way,2
+36.927048,-121.765297,2637,Freedom Blvd & Crestview Dr,16
+36.92701,-121.764923,2638,Freedom Blvd & Crestview Dr (Court House),25
+36.91711,-121.760429,2641,Freedom Blvd & Brennan,0
+36.976433,-121.985474,2642,Capitola Rd & Leila Court,2
+36.95694,-121.801193,2643,Freedom Blvd (#2718),1
+36.966774,-121.965004,2649,41st Ave & Gladys Ave,2
+36.963528,-121.965912,2650,Portola Dr & 41st Ave,3
+36.963299,-121.965576,2651,Portola Dr & 41st Ave,0
+36.983833,-122.03476,2654,Harvey West Blvd & Sylvania Ave (Costco),2
+36.938019,-121.77755,2655,Freedom Blvd & Airport Blvd (Library),3
+36.975868,-122.032707,2656,Mission & Union,1
+36.974789,-122.058456,2659,Western Dr & Meder,2
+36.97036,-122.05851,2660,Western Dr & Monarch Way,0
+36.968826,-122.058517,2661,Western Dr & Western Ct,2
+36.966549,-122.057159,2662,Western Dr & Cypress Park,9
+36.964523,-122.05674,2663,Western Dr & Flower,8
+36.98732,-122.03698,2664,Encinal & Dubois,0
+36.973255,-122.024117,2666,Soquel Ave & Front,17
+36.97403,-122.024796,2667,Front & Soquel Ave,84
+36.977631,-122.014473,2668,Soquel Ave & Caledonia,3
+36.985916,-122.053543,2669,Hagar Dr & Village Rd (UCSC - The Farm),12
+36.990601,-122.066093,2670,Heller Dr (UCSC - Oakes College),205
+36.992802,-122.06485,2671,Heller Dr (UCSC - Rachel Carson College & Porter),265
+36.996708,-122.063583,2672,Heller Dr (UCSC - Kerr Hall),94
+36.999207,-122.064339,2673,Heller Dr & McLaughlin Dr (UCSC - Kresge College),9
+36.999855,-122.062172,2674,McLaughlin Dr (UCSC - Science Hill),250
+36.999756,-122.058311,2675,McLaughlin Dr (UCSC - College 9 & 10 / Health Ctr),169
+36.996662,-122.055412,2676,"Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",327
+36.991276,-122.054886,2677,Hagar Dr (UCSC - East Remote Parking),24
+36.985538,-122.053551,2678,Hagar Dr & Village Rd (UCSC - The Farm),16
+36.98156,-122.052109,2679,Coolidge Dr & Hagar Ct  (UCSC - Lower Campus),8
+36.949459,-121.866203,2681,Via Pacifica & Cabo Court,1
+36.977005,-122.020386,2682,Ocean & Dakota,0
+36.986927,-122.034683,2683,Encinal & Sylvania,1
+36.913898,-121.760254,2691,Main & Ford,18
+37.061172,-122.079826,2692,Hwy 9 (SLV High School),25
+36.95805,-122.030998,2694,Delaware Ave & Centennial,10
+36.958031,-122.030022,2695,Delaware Ave & Liberty,0
+36.957451,-122.033981,2696,Delaware Ave & Columbia,2
+36.965668,-122.02536,2697,Pacific & Center,52
+36.978306,-121.953102,2699,Capitola Ave & Bay Ave,1
+36.970673,-122.024979,SCMC,Santa Cruz Metro Center,0
+36.971077,-122.024574,2701,Santa Cruz Metro Center - Lane 1,558
+36.970917,-122.024529,2702,Santa Cruz Metro Center - Lane 2,91
+36.970795,-122.024475,2703,Santa Cruz Metro Center - Lane 3,11
+36.970615,-122.024475,2704,Santa Cruz Metro Center - Lane 4,314
+36.905781,-121.76696,2705,W Beach (#600),2
+36.907745,-121.774651,2706,Ohlone Pkwy & Lighthouse Dr,0
+36.910149,-121.774933,2707,Ohlone Pkwy & Loma Vista,0
+36.912548,-121.777344,2708,Ohlone Pkwy & Kingfisher Dr,0
+36.914127,-121.778275,2709,Ohlone Pkwy & Egret Ln,0
+36.914452,-121.778473,2710,Ohlone Pkwy & Harkins Slough Rd,0
+36.912193,-121.776939,2711,Ohlone Pkwy & Kingfisher Dr,0
+36.909637,-121.775085,2712,Ohlone Pkwy & Loma Vista,0
+36.906418,-121.774376,2713,Ohlone Pkwy & Bree Ln,3
+36.931133,-121.781326,2714,Holly Dr & Airport Rd,1
+36.958874,-122.057594,2715,Natural Bridges Dr & Mission,5
+36.959156,-122.057434,2716,Natural Bridges Dr & Mission,17
+36.95499,-122.057137,2717,Natural Bridges Dr & Delaware Ave,6
+36.95507,-122.056969,2718,Natural Bridges Dr & Delaware Ave,7
+36.90448,-121.768311,2719,W Beach & Industrial Rd,0
+36.917862,-121.783974,2721,S Green Valley Rd & Main,0
+36.989567,-121.928917,2722,Soquel Dr & Lower Perimeter Rd (Sesnon House),2
+36.957859,-122.032242,2723,Delaware Ave & National,4
+36.931389,-121.776657,2724,S Green Valley Rd & Loma Prieta Ave,6
+36.930779,-121.744064,2725,E Lake & Bridge,1
+36.937431,-121.771591,2726,Green Valley Rd & Stewart Ave,7
+36.914471,-121.790749,2727,Harkins Slough Rd (Pajaro Valley High School),12
+36.981316,-122.00946,2728,Water & Poplar,17
+36.968571,-122.031334,2731,Laurel & Blackburn,203
+36.977974,-121.992477,2732,7th Ave & Tanner Ct,0
+36.987053,-121.967438,2733,Soquel Dr & Research Park Dr,0
+36.916489,-121.770653,2734,Main & Pennsylvania Dr,33
+36.922581,-121.760994,2737,Lincoln & Prospect,0
+36.923019,-121.793701,2738,Westgate Dr & Technology Dr (Social Security),0
+36.979889,-122.059326,2739,High & Tosca Terrace,3
+36.954983,-122.054375,2740,Delaware & Swanton,2
+36.990452,-122.032234,2743,Vernon & River (METRO Admin Offices),0
+36.949341,-122.065033,2744,McAllister Way (Seymour Center),15
+36.960381,-122.043564,2747,Almar & Rankin,0
+36.98167,-121.952545,2748,Capitola Ave & Hill,0
+36.952572,-122.06546,2749,McAllister Way (Coastal Biology Building),0
+36.952583,-122.065437,2750,McAllister Way (Coastal Biology Building),75
+36.91111,-121.756271,2751,Union & Beach,0
+36.975555,-121.966148,CAPM,Capitola Mall,0
+36.975433,-121.966217,2801,Capitola Mall - Lane 1,118
+36.975677,-121.966087,2802,Capitola Mall - Lane 2,95
+36.909691,-121.759972,WTC,Watsonville Transit Center,0
+36.909863,-121.760071,2901,Watsonville Transit Center - Lane 1,147
+36.909775,-121.760223,2902,Watsonville Transit Center - Lane 2,125
